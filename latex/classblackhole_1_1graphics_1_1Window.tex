@@ -1,0 +1,381 @@
+\hypertarget{classblackhole_1_1graphics_1_1Window}{}\doxysection{blackhole\+::graphics\+::Window Class Reference}
+\label{classblackhole_1_1graphics_1_1Window}\index{blackhole::graphics::Window@{blackhole::graphics::Window}}
+
+
+A class for handling rendering, events, and main functions.  
+
+
+
+
+{\ttfamily \#include $<$window.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1Window_a844b5939bbfa79a61b9bc79d20baa606}{Window}} (int width, int height, const char $\ast$title, SDL\+\_\+\+Rect render\+Frame)
+\begin{DoxyCompactList}\small\item\em Constructor of \mbox{\hyperlink{classblackhole_1_1graphics_1_1Window}{Window}} with standard color. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1Window_a5640bb85dc170c4ab3a204498fd2c1e6}{Window}} (int width, int height, const char $\ast$title, SDL\+\_\+\+Rect render\+Frame, \mbox{\hyperlink{structblackhole_1_1graphics_1_1Color}{Color}} bg)
+\begin{DoxyCompactList}\small\item\em Constructor of \mbox{\hyperlink{classblackhole_1_1graphics_1_1Window}{Window}} with custom color. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1Window_aec0b8a4d56d86bf9c07318a17f904be7}\label{classblackhole_1_1graphics_1_1Window_aec0b8a4d56d86bf9c07318a17f904be7}} 
+void \mbox{\hyperlink{classblackhole_1_1graphics_1_1Window_aec0b8a4d56d86bf9c07318a17f904be7}{Render}} ()
+\begin{DoxyCompactList}\small\item\em Function for rendering all classes built on \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase}{Image\+Base}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classblackhole_1_1graphics_1_1Window_a06eca5562b4bad5a0d9731533b9e3cfb}{add\+Camera}} (\mbox{\hyperlink{classblackhole_1_1graphics_1_1Camera}{Camera}} $\ast$cam)
+\begin{DoxyCompactList}\small\item\em Function for adding a \mbox{\hyperlink{classblackhole_1_1graphics_1_1Camera}{Camera}} to watch. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classblackhole_1_1graphics_1_1Window_a87aa0621ea7a9d3de243302475f1a3c1}{remove\+Camera}} (\mbox{\hyperlink{classblackhole_1_1graphics_1_1Camera}{Camera}} $\ast$cam)
+\begin{DoxyCompactList}\small\item\em Function for removing a \mbox{\hyperlink{classblackhole_1_1graphics_1_1Camera}{Camera}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classblackhole_1_1graphics_1_1Window_acfe516c27deb2bf3996dbabf06eb0c78}{add\+Image}} (\mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase}{Image\+Base}} $\ast$image)
+\begin{DoxyCompactList}\small\item\em Function for adding an \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase}{Image\+Base}} for rendering. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classblackhole_1_1graphics_1_1Window_a6c26d0e8af6cb4de71b403e0b968d1db}{remove\+Image}} (\mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase}{Image\+Base}} $\ast$image)
+\begin{DoxyCompactList}\small\item\em Function for removing an \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase}{Image\+Base}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classblackhole_1_1graphics_1_1Window_a897d0b6fa5d36d21533e990b758cc823}{get\+Width}} ()
+\begin{DoxyCompactList}\small\item\em Get the width of the WIndow. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classblackhole_1_1graphics_1_1Window_af6f456e8d86508c531464da8c92a1371}{get\+Height}} ()
+\begin{DoxyCompactList}\small\item\em Get the height of the WIndow. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Window $\ast$ \mbox{\hyperlink{classblackhole_1_1graphics_1_1Window_abba2a8e24da5ceb9378da654123245b4}{get\+Window}} ()
+\begin{DoxyCompactList}\small\item\em Get the SDL declaration of the window. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Renderer $\ast$ \mbox{\hyperlink{classblackhole_1_1graphics_1_1Window_abceb685ec4fab7c2fa3b925779025ff8}{get\+Renderer}} ()
+\begin{DoxyCompactList}\small\item\em Get the SDL declaration of the renderer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classblackhole_1_1graphics_1_1Window_a27dcb58b74b33d241eb3d5f51d54bab3}{set\+Render\+Frame}} (int width, int height)
+\begin{DoxyCompactList}\small\item\em Set the size of the viewport that can be rendered on. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classblackhole_1_1graphics_1_1Window_a026f0861f087c37708a62990a232b0f3}{set\+Scale}} (\mbox{\hyperlink{structblackhole_1_1graphics_1_1floatXY}{float\+XY}} scale)
+\begin{DoxyCompactList}\small\item\em Set the zoom scale of the window. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structblackhole_1_1graphics_1_1floatXY}{float\+XY}} \mbox{\hyperlink{classblackhole_1_1graphics_1_1Window_a5759c815daecb41a406074739fd030ae}{get\+Scale}} ()
+\begin{DoxyCompactList}\small\item\em Get the zoom scale of the window. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classblackhole_1_1graphics_1_1Window_a5773aa18977f5148cd1aa9bcec088101}{start\+Main\+Loop}} (void($\ast$\+\_\+main)(), int fps)
+\begin{DoxyCompactList}\small\item\em Start the window functions. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classblackhole_1_1graphics_1_1Window_a17f389ac6625e5f65d3f9d026c70ca26}{is\+Closed}} ()
+\begin{DoxyCompactList}\small\item\em Check if window is closed. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classblackhole_1_1graphics_1_1Window_acb9b80283fbb24b13c74781737480e10}{get\+Time\+Since\+Last\+Frame}} ()
+\begin{DoxyCompactList}\small\item\em Get the time since the last frame. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classblackhole_1_1graphics_1_1Window_a22c7a8398422295726f7a436fdf72c01}{set\+Fps}} (int fps)
+\begin{DoxyCompactList}\small\item\em Set fps for the renderer. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classblackhole_1_1graphics_1_1Window_a5d94ad69ad8b09f2f3d11172fafe461d}{get\+Delta\+Time}} ()
+\begin{DoxyCompactList}\small\item\em Get the time since last main function call. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classblackhole_1_1graphics_1_1Window_a9f0deed6c14bcfeb902b1a9b501e57b1}{key\+Down}} (SDL\+\_\+\+Scancode scancode)
+\begin{DoxyCompactList}\small\item\em Check if key X is pressed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class for handling rendering, events, and main functions. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1Window_a844b5939bbfa79a61b9bc79d20baa606}\label{classblackhole_1_1graphics_1_1Window_a844b5939bbfa79a61b9bc79d20baa606}} 
+\index{blackhole::graphics::Window@{blackhole::graphics::Window}!Window@{Window}}
+\index{Window@{Window}!blackhole::graphics::Window@{blackhole::graphics::Window}}
+\doxysubsubsection{\texorpdfstring{Window()}{Window()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily blackhole\+::graphics\+::\+Window\+::\+Window (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height,  }\item[{const char $\ast$}]{title,  }\item[{SDL\+\_\+\+Rect}]{render\+Frame }\end{DoxyParamCaption})}
+
+
+
+Constructor of \mbox{\hyperlink{classblackhole_1_1graphics_1_1Window}{Window}} with standard color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & Width of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Window}{Window}} \\
+\hline
+{\em height} & Height of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Window}{Window}} \\
+\hline
+{\em title} & Name of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Window}{Window}} \\
+\hline
+{\em render\+Frame} & Rectangle of Renderable positions \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1Window_a5640bb85dc170c4ab3a204498fd2c1e6}\label{classblackhole_1_1graphics_1_1Window_a5640bb85dc170c4ab3a204498fd2c1e6}} 
+\index{blackhole::graphics::Window@{blackhole::graphics::Window}!Window@{Window}}
+\index{Window@{Window}!blackhole::graphics::Window@{blackhole::graphics::Window}}
+\doxysubsubsection{\texorpdfstring{Window()}{Window()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily blackhole\+::graphics\+::\+Window\+::\+Window (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height,  }\item[{const char $\ast$}]{title,  }\item[{SDL\+\_\+\+Rect}]{render\+Frame,  }\item[{\mbox{\hyperlink{structblackhole_1_1graphics_1_1Color}{Color}}}]{bg }\end{DoxyParamCaption})}
+
+
+
+Constructor of \mbox{\hyperlink{classblackhole_1_1graphics_1_1Window}{Window}} with custom color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & Width of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Window}{Window}} \\
+\hline
+{\em height} & Height of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Window}{Window}} \\
+\hline
+{\em title} & Name of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Window}{Window}} \\
+\hline
+{\em render\+Frame} & Rectangle of renderable positions \\
+\hline
+{\em bg} & \mbox{\hyperlink{structblackhole_1_1graphics_1_1Color}{Color}} of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Window}{Window}} background \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1Window_a06eca5562b4bad5a0d9731533b9e3cfb}\label{classblackhole_1_1graphics_1_1Window_a06eca5562b4bad5a0d9731533b9e3cfb}} 
+\index{blackhole::graphics::Window@{blackhole::graphics::Window}!addCamera@{addCamera}}
+\index{addCamera@{addCamera}!blackhole::graphics::Window@{blackhole::graphics::Window}}
+\doxysubsubsection{\texorpdfstring{addCamera()}{addCamera()}}
+{\footnotesize\ttfamily void blackhole\+::graphics\+::\+Window\+::add\+Camera (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classblackhole_1_1graphics_1_1Camera}{Camera}} $\ast$}]{cam }\end{DoxyParamCaption})}
+
+
+
+Function for adding a \mbox{\hyperlink{classblackhole_1_1graphics_1_1Camera}{Camera}} to watch. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cam} & Pointer to the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Camera}{Camera}} to add\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1Window_a87aa0621ea7a9d3de243302475f1a3c1}{remove\+Camera()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1Window_acfe516c27deb2bf3996dbabf06eb0c78}\label{classblackhole_1_1graphics_1_1Window_acfe516c27deb2bf3996dbabf06eb0c78}} 
+\index{blackhole::graphics::Window@{blackhole::graphics::Window}!addImage@{addImage}}
+\index{addImage@{addImage}!blackhole::graphics::Window@{blackhole::graphics::Window}}
+\doxysubsubsection{\texorpdfstring{addImage()}{addImage()}}
+{\footnotesize\ttfamily void blackhole\+::graphics\+::\+Window\+::add\+Image (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase}{Image\+Base}} $\ast$}]{image }\end{DoxyParamCaption})}
+
+
+
+Function for adding an \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase}{Image\+Base}} for rendering. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & Pointer to the \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase}{Image\+Base}} to add\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1Window_a6c26d0e8af6cb4de71b403e0b968d1db}{remove\+Image()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1Window_a5d94ad69ad8b09f2f3d11172fafe461d}\label{classblackhole_1_1graphics_1_1Window_a5d94ad69ad8b09f2f3d11172fafe461d}} 
+\index{blackhole::graphics::Window@{blackhole::graphics::Window}!getDeltaTime@{getDeltaTime}}
+\index{getDeltaTime@{getDeltaTime}!blackhole::graphics::Window@{blackhole::graphics::Window}}
+\doxysubsubsection{\texorpdfstring{getDeltaTime()}{getDeltaTime()}}
+{\footnotesize\ttfamily double blackhole\+::graphics\+::\+Window\+::get\+Delta\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the time since last main function call. 
+
+\begin{DoxyReturn}{Returns}
+double of delta time 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1Window_af6f456e8d86508c531464da8c92a1371}\label{classblackhole_1_1graphics_1_1Window_af6f456e8d86508c531464da8c92a1371}} 
+\index{blackhole::graphics::Window@{blackhole::graphics::Window}!getHeight@{getHeight}}
+\index{getHeight@{getHeight}!blackhole::graphics::Window@{blackhole::graphics::Window}}
+\doxysubsubsection{\texorpdfstring{getHeight()}{getHeight()}}
+{\footnotesize\ttfamily int blackhole\+::graphics\+::\+Window\+::get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the height of the WIndow. 
+
+return height of window eg. 600 px
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1Window_a897d0b6fa5d36d21533e990b758cc823}{get\+Width()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1Window_abceb685ec4fab7c2fa3b925779025ff8}\label{classblackhole_1_1graphics_1_1Window_abceb685ec4fab7c2fa3b925779025ff8}} 
+\index{blackhole::graphics::Window@{blackhole::graphics::Window}!getRenderer@{getRenderer}}
+\index{getRenderer@{getRenderer}!blackhole::graphics::Window@{blackhole::graphics::Window}}
+\doxysubsubsection{\texorpdfstring{getRenderer()}{getRenderer()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Renderer$\ast$ blackhole\+::graphics\+::\+Window\+::get\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the SDL declaration of the renderer. 
+
+\begin{DoxyReturn}{Returns}
+pointer of SDL\+\_\+\+Renderer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1Window_a5759c815daecb41a406074739fd030ae}\label{classblackhole_1_1graphics_1_1Window_a5759c815daecb41a406074739fd030ae}} 
+\index{blackhole::graphics::Window@{blackhole::graphics::Window}!getScale@{getScale}}
+\index{getScale@{getScale}!blackhole::graphics::Window@{blackhole::graphics::Window}}
+\doxysubsubsection{\texorpdfstring{getScale()}{getScale()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structblackhole_1_1graphics_1_1floatXY}{float\+XY}} blackhole\+::graphics\+::\+Window\+::get\+Scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the zoom scale of the window. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{structblackhole_1_1graphics_1_1floatXY}{float\+XY}} of the scale eg. \{2, 2\} {\ttfamily 2x zoom}
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1Window_a026f0861f087c37708a62990a232b0f3}{set\+Scale()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1Window_acb9b80283fbb24b13c74781737480e10}\label{classblackhole_1_1graphics_1_1Window_acb9b80283fbb24b13c74781737480e10}} 
+\index{blackhole::graphics::Window@{blackhole::graphics::Window}!getTimeSinceLastFrame@{getTimeSinceLastFrame}}
+\index{getTimeSinceLastFrame@{getTimeSinceLastFrame}!blackhole::graphics::Window@{blackhole::graphics::Window}}
+\doxysubsubsection{\texorpdfstring{getTimeSinceLastFrame()}{getTimeSinceLastFrame()}}
+{\footnotesize\ttfamily float blackhole\+::graphics\+::\+Window\+::get\+Time\+Since\+Last\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the time since the last frame. 
+
+\begin{DoxyReturn}{Returns}
+float of time eg. 0.\+0122f seconds 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1Window_a897d0b6fa5d36d21533e990b758cc823}\label{classblackhole_1_1graphics_1_1Window_a897d0b6fa5d36d21533e990b758cc823}} 
+\index{blackhole::graphics::Window@{blackhole::graphics::Window}!getWidth@{getWidth}}
+\index{getWidth@{getWidth}!blackhole::graphics::Window@{blackhole::graphics::Window}}
+\doxysubsubsection{\texorpdfstring{getWidth()}{getWidth()}}
+{\footnotesize\ttfamily int blackhole\+::graphics\+::\+Window\+::get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the width of the WIndow. 
+
+return width of window eg. 600 px
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1Window_af6f456e8d86508c531464da8c92a1371}{get\+Height()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1Window_abba2a8e24da5ceb9378da654123245b4}\label{classblackhole_1_1graphics_1_1Window_abba2a8e24da5ceb9378da654123245b4}} 
+\index{blackhole::graphics::Window@{blackhole::graphics::Window}!getWindow@{getWindow}}
+\index{getWindow@{getWindow}!blackhole::graphics::Window@{blackhole::graphics::Window}}
+\doxysubsubsection{\texorpdfstring{getWindow()}{getWindow()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Window$\ast$ blackhole\+::graphics\+::\+Window\+::get\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the SDL declaration of the window. 
+
+\begin{DoxyReturn}{Returns}
+pointer of SDL\+\_\+\+Window 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1Window_a17f389ac6625e5f65d3f9d026c70ca26}\label{classblackhole_1_1graphics_1_1Window_a17f389ac6625e5f65d3f9d026c70ca26}} 
+\index{blackhole::graphics::Window@{blackhole::graphics::Window}!isClosed@{isClosed}}
+\index{isClosed@{isClosed}!blackhole::graphics::Window@{blackhole::graphics::Window}}
+\doxysubsubsection{\texorpdfstring{isClosed()}{isClosed()}}
+{\footnotesize\ttfamily bool blackhole\+::graphics\+::\+Window\+::is\+Closed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Check if window is closed. 
+
+\begin{DoxyReturn}{Returns}
+true if closed. false if not closed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1Window_a9f0deed6c14bcfeb902b1a9b501e57b1}\label{classblackhole_1_1graphics_1_1Window_a9f0deed6c14bcfeb902b1a9b501e57b1}} 
+\index{blackhole::graphics::Window@{blackhole::graphics::Window}!keyDown@{keyDown}}
+\index{keyDown@{keyDown}!blackhole::graphics::Window@{blackhole::graphics::Window}}
+\doxysubsubsection{\texorpdfstring{keyDown()}{keyDown()}}
+{\footnotesize\ttfamily bool blackhole\+::graphics\+::\+Window\+::key\+Down (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Scancode}]{scancode }\end{DoxyParamCaption})}
+
+
+
+Check if key X is pressed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scancode} & SDL\+\_\+\+Scancode of the key\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if key is pressed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1Window_a87aa0621ea7a9d3de243302475f1a3c1}\label{classblackhole_1_1graphics_1_1Window_a87aa0621ea7a9d3de243302475f1a3c1}} 
+\index{blackhole::graphics::Window@{blackhole::graphics::Window}!removeCamera@{removeCamera}}
+\index{removeCamera@{removeCamera}!blackhole::graphics::Window@{blackhole::graphics::Window}}
+\doxysubsubsection{\texorpdfstring{removeCamera()}{removeCamera()}}
+{\footnotesize\ttfamily void blackhole\+::graphics\+::\+Window\+::remove\+Camera (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classblackhole_1_1graphics_1_1Camera}{Camera}} $\ast$}]{cam }\end{DoxyParamCaption})}
+
+
+
+Function for removing a \mbox{\hyperlink{classblackhole_1_1graphics_1_1Camera}{Camera}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cam} & Pointer to the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Camera}{Camera}} to remove\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1Window_a06eca5562b4bad5a0d9731533b9e3cfb}{add\+Camera()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1Window_a6c26d0e8af6cb4de71b403e0b968d1db}\label{classblackhole_1_1graphics_1_1Window_a6c26d0e8af6cb4de71b403e0b968d1db}} 
+\index{blackhole::graphics::Window@{blackhole::graphics::Window}!removeImage@{removeImage}}
+\index{removeImage@{removeImage}!blackhole::graphics::Window@{blackhole::graphics::Window}}
+\doxysubsubsection{\texorpdfstring{removeImage()}{removeImage()}}
+{\footnotesize\ttfamily void blackhole\+::graphics\+::\+Window\+::remove\+Image (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase}{Image\+Base}} $\ast$}]{image }\end{DoxyParamCaption})}
+
+
+
+Function for removing an \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase}{Image\+Base}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & Pointer to the \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase}{Image\+Base}} to remove\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1Window_acfe516c27deb2bf3996dbabf06eb0c78}{add\+Image()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1Window_a22c7a8398422295726f7a436fdf72c01}\label{classblackhole_1_1graphics_1_1Window_a22c7a8398422295726f7a436fdf72c01}} 
+\index{blackhole::graphics::Window@{blackhole::graphics::Window}!setFps@{setFps}}
+\index{setFps@{setFps}!blackhole::graphics::Window@{blackhole::graphics::Window}}
+\doxysubsubsection{\texorpdfstring{setFps()}{setFps()}}
+{\footnotesize\ttfamily void blackhole\+::graphics\+::\+Window\+::set\+Fps (\begin{DoxyParamCaption}\item[{int}]{fps }\end{DoxyParamCaption})}
+
+
+
+Set fps for the renderer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fps} & Frames Per Second \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1Window_a27dcb58b74b33d241eb3d5f51d54bab3}\label{classblackhole_1_1graphics_1_1Window_a27dcb58b74b33d241eb3d5f51d54bab3}} 
+\index{blackhole::graphics::Window@{blackhole::graphics::Window}!setRenderFrame@{setRenderFrame}}
+\index{setRenderFrame@{setRenderFrame}!blackhole::graphics::Window@{blackhole::graphics::Window}}
+\doxysubsubsection{\texorpdfstring{setRenderFrame()}{setRenderFrame()}}
+{\footnotesize\ttfamily void blackhole\+::graphics\+::\+Window\+::set\+Render\+Frame (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+
+
+Set the size of the viewport that can be rendered on. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & Width of the viewport \\
+\hline
+{\em height} & Height of the viewport \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1Window_a026f0861f087c37708a62990a232b0f3}\label{classblackhole_1_1graphics_1_1Window_a026f0861f087c37708a62990a232b0f3}} 
+\index{blackhole::graphics::Window@{blackhole::graphics::Window}!setScale@{setScale}}
+\index{setScale@{setScale}!blackhole::graphics::Window@{blackhole::graphics::Window}}
+\doxysubsubsection{\texorpdfstring{setScale()}{setScale()}}
+{\footnotesize\ttfamily void blackhole\+::graphics\+::\+Window\+::set\+Scale (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structblackhole_1_1graphics_1_1floatXY}{float\+XY}}}]{scale }\end{DoxyParamCaption})}
+
+
+
+Set the zoom scale of the window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scale} & \{x, y\} value of the scale \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1Window_a5759c815daecb41a406074739fd030ae}{get\+Scale()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1Window_a5773aa18977f5148cd1aa9bcec088101}\label{classblackhole_1_1graphics_1_1Window_a5773aa18977f5148cd1aa9bcec088101}} 
+\index{blackhole::graphics::Window@{blackhole::graphics::Window}!startMainLoop@{startMainLoop}}
+\index{startMainLoop@{startMainLoop}!blackhole::graphics::Window@{blackhole::graphics::Window}}
+\doxysubsubsection{\texorpdfstring{startMainLoop()}{startMainLoop()}}
+{\footnotesize\ttfamily void blackhole\+::graphics\+::\+Window\+::start\+Main\+Loop (\begin{DoxyParamCaption}\item[{void($\ast$)()}]{\+\_\+main,  }\item[{int}]{fps }\end{DoxyParamCaption})}
+
+
+
+Start the window functions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+main} & Main function declared by the user \\
+\hline
+{\em fps} & Frames Per Second \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/graphics/\mbox{\hyperlink{window_8h}{window.\+h}}\end{DoxyCompactItemize}

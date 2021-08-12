@@ -1,0 +1,210 @@
+\hypertarget{classblackhole_1_1graphics_1_1Camera}{}\doxysection{blackhole\+::graphics\+::Camera Class Reference}
+\label{classblackhole_1_1graphics_1_1Camera}\index{blackhole::graphics::Camera@{blackhole::graphics::Camera}}
+
+
+The class for viewing classes built on \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase}{Image\+Base}}.  
+
+
+
+
+{\ttfamily \#include $<$camera.\+h$>$}
+
+Inheritance diagram for blackhole\+::graphics\+::Camera\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classblackhole_1_1graphics_1_1Camera}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1Camera_ad176c6fd3e98e23c7942dbd681155a76}{Camera}} (SDL\+\_\+\+Renderer $\ast$renderer, int w, int h, float x=0, float y=0)
+\begin{DoxyCompactList}\small\item\em The Constructor of \mbox{\hyperlink{classblackhole_1_1graphics_1_1Camera}{Camera}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classblackhole_1_1graphics_1_1Camera_a4fba709b8c069fc01c77cd434942de80}{add\+Time}} (float time)
+\begin{DoxyCompactList}\small\item\em adjusts time for the images when \mbox{\hyperlink{classblackhole_1_1graphics_1_1Camera}{Camera}} is used as an image collator \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classblackhole_1_1graphics_1_1Camera_a01a881f3076ddf56564bd1008dfa5bca}{setX}} (float x)
+\begin{DoxyCompactList}\small\item\em Set the x position of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Camera}{Camera}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classblackhole_1_1graphics_1_1Camera_ae46fab465a10737ad19eb64b2f164a50}{setY}} (float y)
+\begin{DoxyCompactList}\small\item\em Set the y position of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Camera}{Camera}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classblackhole_1_1graphics_1_1Camera_a32fe96e942130ae8309279bb89c43d34}{add\+Image}} (\mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase}{Image\+Base}} $\ast$image)
+\begin{DoxyCompactList}\small\item\em Add an \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase}{Image\+Base}} based class to the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Camera}{Camera}} for collating. Use for \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase}{Image\+Base}} only this \mbox{\hyperlink{classblackhole_1_1graphics_1_1Camera}{Camera}} can see. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classblackhole_1_1graphics_1_1Camera_a6f42e47cf5a2a487195ba40f4f51376e}{remove\+Image}} (\mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase}{Image\+Base}} $\ast$image)
+\begin{DoxyCompactList}\small\item\em Remove an \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase}{Image\+Base}} based class from the camera. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Rect $\ast$ \mbox{\hyperlink{classblackhole_1_1graphics_1_1Camera_a5bb01c4a434cbb4dfac929fc87d4539e}{get\+Viewport}} ()
+\begin{DoxyCompactList}\small\item\em Get the size of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Camera}{Camera}} viewport. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Texture $\ast$ \mbox{\hyperlink{classblackhole_1_1graphics_1_1Camera_a9f8bd3cd8ac45fb6e8fd3a60d3ab2344}{get\+Cam\+Texture}} ()
+\begin{DoxyCompactList}\small\item\em Get the texture of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Camera}{Camera}} for copying renderer. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Texture $\ast$ \mbox{\hyperlink{classblackhole_1_1graphics_1_1Camera_a8dbc2955c7c6dfd0f56730f40911df50}{get\+Texture}} ()
+\begin{DoxyCompactList}\small\item\em Get the texture of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Camera}{Camera}} with its images. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The class for viewing classes built on \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase}{Image\+Base}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1Camera_ad176c6fd3e98e23c7942dbd681155a76}\label{classblackhole_1_1graphics_1_1Camera_ad176c6fd3e98e23c7942dbd681155a76}} 
+\index{blackhole::graphics::Camera@{blackhole::graphics::Camera}!Camera@{Camera}}
+\index{Camera@{Camera}!blackhole::graphics::Camera@{blackhole::graphics::Camera}}
+\doxysubsubsection{\texorpdfstring{Camera()}{Camera()}}
+{\footnotesize\ttfamily blackhole\+::graphics\+::\+Camera\+::\+Camera (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer,  }\item[{int}]{w,  }\item[{int}]{h,  }\item[{float}]{x = {\ttfamily 0},  }\item[{float}]{y = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+The Constructor of \mbox{\hyperlink{classblackhole_1_1graphics_1_1Camera}{Camera}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & The renderer of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Window}{Window}} \\
+\hline
+{\em w} & The width of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Camera}{Camera}} \\
+\hline
+{\em h} & The height of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Camera}{Camera}} \\
+\hline
+{\em x} & The x position of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Camera}{Camera}} \\
+\hline
+{\em y} & the y position of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Camera}{Camera}} \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1Camera_a32fe96e942130ae8309279bb89c43d34}\label{classblackhole_1_1graphics_1_1Camera_a32fe96e942130ae8309279bb89c43d34}} 
+\index{blackhole::graphics::Camera@{blackhole::graphics::Camera}!addImage@{addImage}}
+\index{addImage@{addImage}!blackhole::graphics::Camera@{blackhole::graphics::Camera}}
+\doxysubsubsection{\texorpdfstring{addImage()}{addImage()}}
+{\footnotesize\ttfamily void blackhole\+::graphics\+::\+Camera\+::add\+Image (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase}{Image\+Base}} $\ast$}]{image }\end{DoxyParamCaption})}
+
+
+
+Add an \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase}{Image\+Base}} based class to the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Camera}{Camera}} for collating. Use for \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase}{Image\+Base}} only this \mbox{\hyperlink{classblackhole_1_1graphics_1_1Camera}{Camera}} can see. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & pointer to the \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase}{Image\+Base}} for rendering\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1Camera_a6f42e47cf5a2a487195ba40f4f51376e}{remove\+Image()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1Camera_a4fba709b8c069fc01c77cd434942de80}\label{classblackhole_1_1graphics_1_1Camera_a4fba709b8c069fc01c77cd434942de80}} 
+\index{blackhole::graphics::Camera@{blackhole::graphics::Camera}!addTime@{addTime}}
+\index{addTime@{addTime}!blackhole::graphics::Camera@{blackhole::graphics::Camera}}
+\doxysubsubsection{\texorpdfstring{addTime()}{addTime()}}
+{\footnotesize\ttfamily void blackhole\+::graphics\+::\+Camera\+::add\+Time (\begin{DoxyParamCaption}\item[{float}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+adjusts time for the images when \mbox{\hyperlink{classblackhole_1_1graphics_1_1Camera}{Camera}} is used as an image collator 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & The amount of time passed in the frame \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase_aeb3e29ce42d9f8730fcf4e951f308356}{blackhole\+::graphics\+::\+Image\+Base}}.
+
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1Camera_a9f8bd3cd8ac45fb6e8fd3a60d3ab2344}\label{classblackhole_1_1graphics_1_1Camera_a9f8bd3cd8ac45fb6e8fd3a60d3ab2344}} 
+\index{blackhole::graphics::Camera@{blackhole::graphics::Camera}!getCamTexture@{getCamTexture}}
+\index{getCamTexture@{getCamTexture}!blackhole::graphics::Camera@{blackhole::graphics::Camera}}
+\doxysubsubsection{\texorpdfstring{getCamTexture()}{getCamTexture()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Texture$\ast$ blackhole\+::graphics\+::\+Camera\+::get\+Cam\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the texture of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Camera}{Camera}} for copying renderer. 
+
+\begin{DoxyReturn}{Returns}
+SDL\+\_\+\+Texture$\ast$ to be erased and copied over for the main renderer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1Camera_a8dbc2955c7c6dfd0f56730f40911df50}\label{classblackhole_1_1graphics_1_1Camera_a8dbc2955c7c6dfd0f56730f40911df50}} 
+\index{blackhole::graphics::Camera@{blackhole::graphics::Camera}!getTexture@{getTexture}}
+\index{getTexture@{getTexture}!blackhole::graphics::Camera@{blackhole::graphics::Camera}}
+\doxysubsubsection{\texorpdfstring{getTexture()}{getTexture()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Texture$\ast$ blackhole\+::graphics\+::\+Camera\+::get\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the texture of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Camera}{Camera}} with its images. 
+
+\begin{DoxyReturn}{Returns}
+SDL\+\_\+\+Texture$\ast$ to be copied to the main renderer 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase_aecb4193bcf87ba6cdbe9af0d295ff0fd}{blackhole\+::graphics\+::\+Image\+Base}}.
+
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1Camera_a5bb01c4a434cbb4dfac929fc87d4539e}\label{classblackhole_1_1graphics_1_1Camera_a5bb01c4a434cbb4dfac929fc87d4539e}} 
+\index{blackhole::graphics::Camera@{blackhole::graphics::Camera}!getViewport@{getViewport}}
+\index{getViewport@{getViewport}!blackhole::graphics::Camera@{blackhole::graphics::Camera}}
+\doxysubsubsection{\texorpdfstring{getViewport()}{getViewport()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Rect$\ast$ blackhole\+::graphics\+::\+Camera\+::get\+Viewport (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the size of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Camera}{Camera}} viewport. 
+
+\begin{DoxyReturn}{Returns}
+SDL\+\_\+\+Rect$\ast$ containing the size of the viewport 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1Camera_a6f42e47cf5a2a487195ba40f4f51376e}\label{classblackhole_1_1graphics_1_1Camera_a6f42e47cf5a2a487195ba40f4f51376e}} 
+\index{blackhole::graphics::Camera@{blackhole::graphics::Camera}!removeImage@{removeImage}}
+\index{removeImage@{removeImage}!blackhole::graphics::Camera@{blackhole::graphics::Camera}}
+\doxysubsubsection{\texorpdfstring{removeImage()}{removeImage()}}
+{\footnotesize\ttfamily void blackhole\+::graphics\+::\+Camera\+::remove\+Image (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase}{Image\+Base}} $\ast$}]{image }\end{DoxyParamCaption})}
+
+
+
+Remove an \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase}{Image\+Base}} based class from the camera. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & pointer to the \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase}{Image\+Base}} you want to remove\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1Camera_a32fe96e942130ae8309279bb89c43d34}{add\+Image()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1Camera_a01a881f3076ddf56564bd1008dfa5bca}\label{classblackhole_1_1graphics_1_1Camera_a01a881f3076ddf56564bd1008dfa5bca}} 
+\index{blackhole::graphics::Camera@{blackhole::graphics::Camera}!setX@{setX}}
+\index{setX@{setX}!blackhole::graphics::Camera@{blackhole::graphics::Camera}}
+\doxysubsubsection{\texorpdfstring{setX()}{setX()}}
+{\footnotesize\ttfamily void blackhole\+::graphics\+::\+Camera\+::setX (\begin{DoxyParamCaption}\item[{float}]{x }\end{DoxyParamCaption})}
+
+
+
+Set the x position of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Camera}{Camera}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x position you want the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Camera}{Camera}} to view\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1Camera_ae46fab465a10737ad19eb64b2f164a50}{set\+Y()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1Camera_ae46fab465a10737ad19eb64b2f164a50}\label{classblackhole_1_1graphics_1_1Camera_ae46fab465a10737ad19eb64b2f164a50}} 
+\index{blackhole::graphics::Camera@{blackhole::graphics::Camera}!setY@{setY}}
+\index{setY@{setY}!blackhole::graphics::Camera@{blackhole::graphics::Camera}}
+\doxysubsubsection{\texorpdfstring{setY()}{setY()}}
+{\footnotesize\ttfamily void blackhole\+::graphics\+::\+Camera\+::setY (\begin{DoxyParamCaption}\item[{float}]{y }\end{DoxyParamCaption})}
+
+
+
+Set the y position of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Camera}{Camera}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & The y position you want the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Camera}{Camera}} to view\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1Camera_a01a881f3076ddf56564bd1008dfa5bca}{set\+X()}} 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/graphics/\mbox{\hyperlink{camera_8h}{camera.\+h}}\end{DoxyCompactItemize}

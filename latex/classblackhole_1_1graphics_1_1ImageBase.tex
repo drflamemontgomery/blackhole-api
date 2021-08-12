@@ -1,0 +1,346 @@
+\hypertarget{classblackhole_1_1graphics_1_1ImageBase}{}\doxysection{blackhole\+::graphics\+::Image\+Base Class Reference}
+\label{classblackhole_1_1graphics_1_1ImageBase}\index{blackhole::graphics::ImageBase@{blackhole::graphics::ImageBase}}
+
+
+The abstract class for all rendered images.  
+
+
+
+
+{\ttfamily \#include $<$image\+Base.\+h$>$}
+
+Inheritance diagram for blackhole\+::graphics\+::Image\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.929461cm]{classblackhole_1_1graphics_1_1ImageBase}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual float \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase_a96224ad8909675e7ccb93786fa102e48}{getX}} ()
+\begin{DoxyCompactList}\small\item\em Overridable function for getting x position. \end{DoxyCompactList}\item 
+virtual float \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase_aa8f42175f9e528b519b96dbfdafaa2a3}{getY}} ()
+\begin{DoxyCompactList}\small\item\em Overridable function for getting y position. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase_aeb3e29ce42d9f8730fcf4e951f308356}{add\+Time}} (float time)
+\begin{DoxyCompactList}\small\item\em Overridable function for updating \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase}{Image\+Base}} time. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase_ad0d878ad6c6ec744f7ba5477fe5cfc1d}{set\+FlipX}} (bool flipped)
+\begin{DoxyCompactList}\small\item\em Overridable function for flipping \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase}{Image\+Base}} across the x plane. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase_a9edc33f427e641f54c781f2a05116d58}{set\+FlipY}} (bool flipped)
+\begin{DoxyCompactList}\small\item\em Overridable function for flipping \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase}{Image\+Base}} across the y plane. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase_a6d351d2534fcf385117f1222b321d154}{is\+FlippedX}} ()
+\begin{DoxyCompactList}\small\item\em Overridable function for checking if \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase}{Image\+Base}} is flipped across the x plane. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase_ac5c3cac20195056126d26c4a322a4adb}{is\+FlippedY}} ()
+\begin{DoxyCompactList}\small\item\em Overridable function for checking if \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase}{Image\+Base}} is flipped across the y plane. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase_a6107472c7884c8346cb0068a03a92868}{set\+Texture}} (SDL\+\_\+\+Texture $\ast$tex)
+\begin{DoxyCompactList}\small\item\em Overridable function for setting \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase}{Image\+Base}} texture generally used in the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Camera}{Camera}} class. \end{DoxyCompactList}\item 
+virtual SDL\+\_\+\+Texture $\ast$ \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase_aecb4193bcf87ba6cdbe9af0d295ff0fd}{get\+Texture}} ()
+\begin{DoxyCompactList}\small\item\em Overridable function for getting a pointer to the \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase}{Image\+Base}} texture. Used for rendering. \end{DoxyCompactList}\item 
+virtual SDL\+\_\+\+Renderer\+Flip \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase_a99aeca6a92addf7e38a94f89034b204f}{get\+Renderer\+Flip}} ()
+\begin{DoxyCompactList}\small\item\em Overridable function for getting the rendererflip for the \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase}{Image\+Base}}. Used for rendering. \end{DoxyCompactList}\item 
+virtual SDL\+\_\+\+Rect $\ast$ \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase_aefb0396781b715264026a3acf96f284f}{get\+Dest\+Rect}} ()
+\begin{DoxyCompactList}\small\item\em Get a pointer to the destination rect used for positioning with the renderer. \end{DoxyCompactList}\item 
+virtual SDL\+\_\+\+Rect $\ast$ \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase_a77ff0bf10a750e4c141cf7eb1f656d85}{get\+Src\+Rect}} ()
+\begin{DoxyCompactList}\small\item\em Get a pointer to the source rect used for positioning with the renderer. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase_af035900d83e216aec98eacd1071ed883}{set\+Layer}} (int layer)
+\begin{DoxyCompactList}\small\item\em Set the layer to be rendered on. 0 -\/ low layer. 100 -\/ high layer. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase_aca145d64fd600a6478e7a5a7fed8a18f}{get\+Layer}} ()
+\begin{DoxyCompactList}\small\item\em Get the layer \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase}{Image\+Base}} is on. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1ImageBase_a2164caadb684865715990a9421dae277}\label{classblackhole_1_1graphics_1_1ImageBase_a2164caadb684865715990a9421dae277}} 
+void {\bfseries init} (const char $\ast$file, SDL\+\_\+\+Renderer $\ast$renderer)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1ImageBase_a787c780d88478c0a1dda3490963a97f6}\label{classblackhole_1_1graphics_1_1ImageBase_a787c780d88478c0a1dda3490963a97f6}} 
+SDL\+\_\+\+Renderer\+Flip {\bfseries renderer\+Flip} = SDL\+\_\+\+FLIP\+\_\+\+NONE
+\item 
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1ImageBase_ae0289bd25b57404c43936472596bb798}\label{classblackhole_1_1graphics_1_1ImageBase_ae0289bd25b57404c43936472596bb798}} 
+int {\bfseries layer} = 0
+\item 
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1ImageBase_abebb882c7e5c70ccb406c964d1761d3c}\label{classblackhole_1_1graphics_1_1ImageBase_abebb882c7e5c70ccb406c964d1761d3c}} 
+SDL\+\_\+\+Rect {\bfseries dest\+Rect}
+\item 
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1ImageBase_a90114edde467653b1eb2aab5d0cbd0a7}\label{classblackhole_1_1graphics_1_1ImageBase_a90114edde467653b1eb2aab5d0cbd0a7}} 
+SDL\+\_\+\+Texture $\ast$ {\bfseries texture}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The abstract class for all rendered images. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1ImageBase_aeb3e29ce42d9f8730fcf4e951f308356}\label{classblackhole_1_1graphics_1_1ImageBase_aeb3e29ce42d9f8730fcf4e951f308356}} 
+\index{blackhole::graphics::ImageBase@{blackhole::graphics::ImageBase}!addTime@{addTime}}
+\index{addTime@{addTime}!blackhole::graphics::ImageBase@{blackhole::graphics::ImageBase}}
+\doxysubsubsection{\texorpdfstring{addTime()}{addTime()}}
+{\footnotesize\ttfamily virtual void blackhole\+::graphics\+::\+Image\+Base\+::add\+Time (\begin{DoxyParamCaption}\item[{float}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Overridable function for updating \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase}{Image\+Base}} time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & The amount of time passed in the frame \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{classblackhole_1_1graphics_1_1Camera_a4fba709b8c069fc01c77cd434942de80}{blackhole\+::graphics\+::\+Camera}}, \mbox{\hyperlink{classblackhole_1_1graphics_1_1AnimatorController_ac7e6f8c664c2f863004a38a21ddb3a2b}{blackhole\+::graphics\+::\+Animator\+Controller}}, and \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation_ab07545f4c80c07fe4bae052c5b59c802}{blackhole\+::graphics\+::\+Animation}}.
+
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1ImageBase_aefb0396781b715264026a3acf96f284f}\label{classblackhole_1_1graphics_1_1ImageBase_aefb0396781b715264026a3acf96f284f}} 
+\index{blackhole::graphics::ImageBase@{blackhole::graphics::ImageBase}!getDestRect@{getDestRect}}
+\index{getDestRect@{getDestRect}!blackhole::graphics::ImageBase@{blackhole::graphics::ImageBase}}
+\doxysubsubsection{\texorpdfstring{getDestRect()}{getDestRect()}}
+{\footnotesize\ttfamily virtual SDL\+\_\+\+Rect$\ast$ blackhole\+::graphics\+::\+Image\+Base\+::get\+Dest\+Rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get a pointer to the destination rect used for positioning with the renderer. 
+
+\begin{DoxyReturn}{Returns}
+SDL\+\_\+\+Rect$\ast$ dest\+Rect of \mbox{\hyperlink{classblackhole_1_1graphics_1_1SpriteSheet}{Sprite\+Sheet}}
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase_a77ff0bf10a750e4c141cf7eb1f656d85}{get\+Src\+Rect()}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented in \mbox{\hyperlink{classblackhole_1_1graphics_1_1SpriteSheet_a281d1625c59623fac417a48c8c9f1bd5}{blackhole\+::graphics\+::\+Sprite\+Sheet}}, \mbox{\hyperlink{classblackhole_1_1graphics_1_1Image_a909540d70f30d9585f5535566ca9651e}{blackhole\+::graphics\+::\+Image}}, \mbox{\hyperlink{classblackhole_1_1graphics_1_1AnimatorController_a5fe17343d3f8613ce7dad2f9ff227c15}{blackhole\+::graphics\+::\+Animator\+Controller}}, and \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation_a8e03286ab050466cde40a09ade8171aa}{blackhole\+::graphics\+::\+Animation}}.
+
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1ImageBase_aca145d64fd600a6478e7a5a7fed8a18f}\label{classblackhole_1_1graphics_1_1ImageBase_aca145d64fd600a6478e7a5a7fed8a18f}} 
+\index{blackhole::graphics::ImageBase@{blackhole::graphics::ImageBase}!getLayer@{getLayer}}
+\index{getLayer@{getLayer}!blackhole::graphics::ImageBase@{blackhole::graphics::ImageBase}}
+\doxysubsubsection{\texorpdfstring{getLayer()}{getLayer()}}
+{\footnotesize\ttfamily virtual int blackhole\+::graphics\+::\+Image\+Base\+::get\+Layer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the layer \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase}{Image\+Base}} is on. 
+
+\begin{DoxyReturn}{Returns}
+int of layer eg. 0 or 100
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase_af035900d83e216aec98eacd1071ed883}{set\+Layer()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1ImageBase_a99aeca6a92addf7e38a94f89034b204f}\label{classblackhole_1_1graphics_1_1ImageBase_a99aeca6a92addf7e38a94f89034b204f}} 
+\index{blackhole::graphics::ImageBase@{blackhole::graphics::ImageBase}!getRendererFlip@{getRendererFlip}}
+\index{getRendererFlip@{getRendererFlip}!blackhole::graphics::ImageBase@{blackhole::graphics::ImageBase}}
+\doxysubsubsection{\texorpdfstring{getRendererFlip()}{getRendererFlip()}}
+{\footnotesize\ttfamily virtual SDL\+\_\+\+Renderer\+Flip blackhole\+::graphics\+::\+Image\+Base\+::get\+Renderer\+Flip (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Overridable function for getting the rendererflip for the \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase}{Image\+Base}}. Used for rendering. 
+
+\begin{DoxyReturn}{Returns}
+SDL\+\_\+\+Renderer\+Flip containing the texture flip data 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1ImageBase_a77ff0bf10a750e4c141cf7eb1f656d85}\label{classblackhole_1_1graphics_1_1ImageBase_a77ff0bf10a750e4c141cf7eb1f656d85}} 
+\index{blackhole::graphics::ImageBase@{blackhole::graphics::ImageBase}!getSrcRect@{getSrcRect}}
+\index{getSrcRect@{getSrcRect}!blackhole::graphics::ImageBase@{blackhole::graphics::ImageBase}}
+\doxysubsubsection{\texorpdfstring{getSrcRect()}{getSrcRect()}}
+{\footnotesize\ttfamily virtual SDL\+\_\+\+Rect$\ast$ blackhole\+::graphics\+::\+Image\+Base\+::get\+Src\+Rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get a pointer to the source rect used for positioning with the renderer. 
+
+\begin{DoxyReturn}{Returns}
+NULL for rendering entire \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase}{Image\+Base}}
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase_aefb0396781b715264026a3acf96f284f}{get\+Dest\+Rect()}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented in \mbox{\hyperlink{classblackhole_1_1graphics_1_1SpriteSheet_afc51363f154f16446696e48ae4452595}{blackhole\+::graphics\+::\+Sprite\+Sheet}}, \mbox{\hyperlink{classblackhole_1_1graphics_1_1AnimatorController_a71db58f1f0f693279f8def40fb7294ad}{blackhole\+::graphics\+::\+Animator\+Controller}}, and \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation_a9c4f8e3c2b289aaae18c660a45981767}{blackhole\+::graphics\+::\+Animation}}.
+
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1ImageBase_aecb4193bcf87ba6cdbe9af0d295ff0fd}\label{classblackhole_1_1graphics_1_1ImageBase_aecb4193bcf87ba6cdbe9af0d295ff0fd}} 
+\index{blackhole::graphics::ImageBase@{blackhole::graphics::ImageBase}!getTexture@{getTexture}}
+\index{getTexture@{getTexture}!blackhole::graphics::ImageBase@{blackhole::graphics::ImageBase}}
+\doxysubsubsection{\texorpdfstring{getTexture()}{getTexture()}}
+{\footnotesize\ttfamily virtual SDL\+\_\+\+Texture$\ast$ blackhole\+::graphics\+::\+Image\+Base\+::get\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Overridable function for getting a pointer to the \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase}{Image\+Base}} texture. Used for rendering. 
+
+\begin{DoxyReturn}{Returns}
+SDL\+\_\+\+Texture$\ast$ of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase}{Image\+Base}} texture
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase_a6107472c7884c8346cb0068a03a92868}{set\+Texture()}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented in \mbox{\hyperlink{classblackhole_1_1graphics_1_1Camera_a8dbc2955c7c6dfd0f56730f40911df50}{blackhole\+::graphics\+::\+Camera}}, \mbox{\hyperlink{classblackhole_1_1graphics_1_1AnimatorController_a379af68bfe0aaef14a66cc724a0ecc86}{blackhole\+::graphics\+::\+Animator\+Controller}}, and \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation_ae3a197e9c8711f1a4787338d635a4123}{blackhole\+::graphics\+::\+Animation}}.
+
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1ImageBase_a96224ad8909675e7ccb93786fa102e48}\label{classblackhole_1_1graphics_1_1ImageBase_a96224ad8909675e7ccb93786fa102e48}} 
+\index{blackhole::graphics::ImageBase@{blackhole::graphics::ImageBase}!getX@{getX}}
+\index{getX@{getX}!blackhole::graphics::ImageBase@{blackhole::graphics::ImageBase}}
+\doxysubsubsection{\texorpdfstring{getX()}{getX()}}
+{\footnotesize\ttfamily virtual float blackhole\+::graphics\+::\+Image\+Base\+::getX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Overridable function for getting x position. 
+
+return float of x position
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase_aa8f42175f9e528b519b96dbfdafaa2a3}{get\+Y()}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented in \mbox{\hyperlink{classblackhole_1_1graphics_1_1SpriteSheet_a8b1019e00d64b303a8225cf2b7067f65}{blackhole\+::graphics\+::\+Sprite\+Sheet}}, \mbox{\hyperlink{classblackhole_1_1graphics_1_1Image_a908268f25ecd1fb07ba1d1df041c0fb4}{blackhole\+::graphics\+::\+Image}}, \mbox{\hyperlink{classblackhole_1_1graphics_1_1AnimatorController_ad0eb37ecceb0039b44e5dc3508a69db9}{blackhole\+::graphics\+::\+Animator\+Controller}}, and \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation_a967fb810af9d1643faf7ee9be7e20ef3}{blackhole\+::graphics\+::\+Animation}}.
+
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1ImageBase_aa8f42175f9e528b519b96dbfdafaa2a3}\label{classblackhole_1_1graphics_1_1ImageBase_aa8f42175f9e528b519b96dbfdafaa2a3}} 
+\index{blackhole::graphics::ImageBase@{blackhole::graphics::ImageBase}!getY@{getY}}
+\index{getY@{getY}!blackhole::graphics::ImageBase@{blackhole::graphics::ImageBase}}
+\doxysubsubsection{\texorpdfstring{getY()}{getY()}}
+{\footnotesize\ttfamily virtual float blackhole\+::graphics\+::\+Image\+Base\+::getY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Overridable function for getting y position. 
+
+return float of y position
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase_a96224ad8909675e7ccb93786fa102e48}{get\+X()}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented in \mbox{\hyperlink{classblackhole_1_1graphics_1_1SpriteSheet_ae7582e516275f3e54a0f7103d3573aeb}{blackhole\+::graphics\+::\+Sprite\+Sheet}}, \mbox{\hyperlink{classblackhole_1_1graphics_1_1Image_a8d00135f29fa2538fdd5b548c4900281}{blackhole\+::graphics\+::\+Image}}, \mbox{\hyperlink{classblackhole_1_1graphics_1_1AnimatorController_a622918719395ef5c6b16ba3bba58d661}{blackhole\+::graphics\+::\+Animator\+Controller}}, and \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation_a765a1edab4b5887303b3dff4a931f80b}{blackhole\+::graphics\+::\+Animation}}.
+
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1ImageBase_a6d351d2534fcf385117f1222b321d154}\label{classblackhole_1_1graphics_1_1ImageBase_a6d351d2534fcf385117f1222b321d154}} 
+\index{blackhole::graphics::ImageBase@{blackhole::graphics::ImageBase}!isFlippedX@{isFlippedX}}
+\index{isFlippedX@{isFlippedX}!blackhole::graphics::ImageBase@{blackhole::graphics::ImageBase}}
+\doxysubsubsection{\texorpdfstring{isFlippedX()}{isFlippedX()}}
+{\footnotesize\ttfamily virtual bool blackhole\+::graphics\+::\+Image\+Base\+::is\+FlippedX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Overridable function for checking if \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase}{Image\+Base}} is flipped across the x plane. 
+
+\begin{DoxyReturn}{Returns}
+true or false depending on if it is flipped
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase_ac5c3cac20195056126d26c4a322a4adb}{is\+Flipped\+Y()}} 
+
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase_ad0d878ad6c6ec744f7ba5477fe5cfc1d}{set\+Flip\+X()}} 
+
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase_a9edc33f427e641f54c781f2a05116d58}{set\+Flip\+Y()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1ImageBase_ac5c3cac20195056126d26c4a322a4adb}\label{classblackhole_1_1graphics_1_1ImageBase_ac5c3cac20195056126d26c4a322a4adb}} 
+\index{blackhole::graphics::ImageBase@{blackhole::graphics::ImageBase}!isFlippedY@{isFlippedY}}
+\index{isFlippedY@{isFlippedY}!blackhole::graphics::ImageBase@{blackhole::graphics::ImageBase}}
+\doxysubsubsection{\texorpdfstring{isFlippedY()}{isFlippedY()}}
+{\footnotesize\ttfamily virtual bool blackhole\+::graphics\+::\+Image\+Base\+::is\+FlippedY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Overridable function for checking if \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase}{Image\+Base}} is flipped across the y plane. 
+
+\begin{DoxyReturn}{Returns}
+true or false depending on if it is flipped
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase_a6d351d2534fcf385117f1222b321d154}{is\+Flipped\+X()}} 
+
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase_ad0d878ad6c6ec744f7ba5477fe5cfc1d}{set\+Flip\+X()}} 
+
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase_a9edc33f427e641f54c781f2a05116d58}{set\+Flip\+Y()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1ImageBase_ad0d878ad6c6ec744f7ba5477fe5cfc1d}\label{classblackhole_1_1graphics_1_1ImageBase_ad0d878ad6c6ec744f7ba5477fe5cfc1d}} 
+\index{blackhole::graphics::ImageBase@{blackhole::graphics::ImageBase}!setFlipX@{setFlipX}}
+\index{setFlipX@{setFlipX}!blackhole::graphics::ImageBase@{blackhole::graphics::ImageBase}}
+\doxysubsubsection{\texorpdfstring{setFlipX()}{setFlipX()}}
+{\footnotesize\ttfamily virtual void blackhole\+::graphics\+::\+Image\+Base\+::set\+FlipX (\begin{DoxyParamCaption}\item[{bool}]{flipped }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Overridable function for flipping \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase}{Image\+Base}} across the x plane. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flipped} & Set \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase}{Image\+Base}} is flipped x\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase_a9edc33f427e641f54c781f2a05116d58}{set\+Flip\+Y()}} 
+
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase_ac5c3cac20195056126d26c4a322a4adb}{is\+Flipped\+Y()}} 
+
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase_a6d351d2534fcf385117f1222b321d154}{is\+Flipped\+X()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1ImageBase_a9edc33f427e641f54c781f2a05116d58}\label{classblackhole_1_1graphics_1_1ImageBase_a9edc33f427e641f54c781f2a05116d58}} 
+\index{blackhole::graphics::ImageBase@{blackhole::graphics::ImageBase}!setFlipY@{setFlipY}}
+\index{setFlipY@{setFlipY}!blackhole::graphics::ImageBase@{blackhole::graphics::ImageBase}}
+\doxysubsubsection{\texorpdfstring{setFlipY()}{setFlipY()}}
+{\footnotesize\ttfamily virtual void blackhole\+::graphics\+::\+Image\+Base\+::set\+FlipY (\begin{DoxyParamCaption}\item[{bool}]{flipped }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Overridable function for flipping \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase}{Image\+Base}} across the y plane. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flipped} & Set \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase}{Image\+Base}} is flipped y\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase_ad0d878ad6c6ec744f7ba5477fe5cfc1d}{set\+Flip\+X()}} 
+
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase_a6d351d2534fcf385117f1222b321d154}{is\+Flipped\+X()}} 
+
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase_ac5c3cac20195056126d26c4a322a4adb}{is\+Flipped\+Y()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1ImageBase_af035900d83e216aec98eacd1071ed883}\label{classblackhole_1_1graphics_1_1ImageBase_af035900d83e216aec98eacd1071ed883}} 
+\index{blackhole::graphics::ImageBase@{blackhole::graphics::ImageBase}!setLayer@{setLayer}}
+\index{setLayer@{setLayer}!blackhole::graphics::ImageBase@{blackhole::graphics::ImageBase}}
+\doxysubsubsection{\texorpdfstring{setLayer()}{setLayer()}}
+{\footnotesize\ttfamily virtual void blackhole\+::graphics\+::\+Image\+Base\+::set\+Layer (\begin{DoxyParamCaption}\item[{int}]{layer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Set the layer to be rendered on. 0 -\/ low layer. 100 -\/ high layer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em layer} & Layer position to render on\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase_aca145d64fd600a6478e7a5a7fed8a18f}{get\+Layer()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1ImageBase_a6107472c7884c8346cb0068a03a92868}\label{classblackhole_1_1graphics_1_1ImageBase_a6107472c7884c8346cb0068a03a92868}} 
+\index{blackhole::graphics::ImageBase@{blackhole::graphics::ImageBase}!setTexture@{setTexture}}
+\index{setTexture@{setTexture}!blackhole::graphics::ImageBase@{blackhole::graphics::ImageBase}}
+\doxysubsubsection{\texorpdfstring{setTexture()}{setTexture()}}
+{\footnotesize\ttfamily virtual void blackhole\+::graphics\+::\+Image\+Base\+::set\+Texture (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Texture $\ast$}]{tex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Overridable function for setting \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase}{Image\+Base}} texture generally used in the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Camera}{Camera}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tex} & Pointer to the texture that should replace the old texture\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase_aecb4193bcf87ba6cdbe9af0d295ff0fd}{get\+Texture()}} 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/graphics/\mbox{\hyperlink{imageBase_8h}{image\+Base.\+h}}\end{DoxyCompactItemize}

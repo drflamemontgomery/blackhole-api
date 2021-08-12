@@ -1,0 +1,303 @@
+\hypertarget{classblackhole_1_1graphics_1_1Animation}{}\doxysection{blackhole\+::graphics\+::Animation Class Reference}
+\label{classblackhole_1_1graphics_1_1Animation}\index{blackhole::graphics::Animation@{blackhole::graphics::Animation}}
+
+
+The class for looping through \mbox{\hyperlink{classblackhole_1_1graphics_1_1SpriteSheet}{Sprite\+Sheet}} frames built on \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase}{Image\+Base}}.  
+
+
+
+
+{\ttfamily \#include $<$animation.\+h$>$}
+
+Inheritance diagram for blackhole\+::graphics\+::Animation\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classblackhole_1_1graphics_1_1Animation}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation_a24e625ead7ab7c9aad5a2223cfa2093d}{Animation}} (\mbox{\hyperlink{classblackhole_1_1graphics_1_1SpriteSheet}{Sprite\+Sheet}} $\ast$images, int frame, int $\ast$frames, int num\+\_\+frames, float speed=1)
+\begin{DoxyCompactList}\small\item\em Constructor of \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation}{Animation}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation_ab2d6d2c3d37e85307dfa2e76bbe85779}{setX}} (float x)
+\begin{DoxyCompactList}\small\item\em Set the x position of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation}{Animation}} \mbox{\hyperlink{classblackhole_1_1graphics_1_1SpriteSheet}{Sprite\+Sheet}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation_aafdb08cd07060d5101f5c25a540ea001}{setY}} (float y)
+\begin{DoxyCompactList}\small\item\em Set the y position of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation}{Animation}} \mbox{\hyperlink{classblackhole_1_1graphics_1_1SpriteSheet}{Sprite\+Sheet}}. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation_a967fb810af9d1643faf7ee9be7e20ef3}{getX}} ()
+\begin{DoxyCompactList}\small\item\em Get the x position of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation}{Animation}} \mbox{\hyperlink{classblackhole_1_1graphics_1_1SpriteSheet}{Sprite\+Sheet}}. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation_a765a1edab4b5887303b3dff4a931f80b}{getY}} ()
+\begin{DoxyCompactList}\small\item\em Get the y position of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation}{Animation}} \mbox{\hyperlink{classblackhole_1_1graphics_1_1SpriteSheet}{Sprite\+Sheet}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation_aeb7316cd25c30edcf0fc0affe45525e3}{set\+Frame}} (int frame)
+\begin{DoxyCompactList}\small\item\em Set the frame for the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation}{Animation}} to show. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation_aa73fa339f7ef8050c63c130be352284a}{get\+Frame}} ()
+\begin{DoxyCompactList}\small\item\em Get the frame the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation}{Animation}} is showing. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation_a6bfd499a7c86c69dc1dda7cd5cfd5ac2}{reset\+Animation}} ()
+\begin{DoxyCompactList}\small\item\em set the frame back to 0 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation_ab07545f4c80c07fe4bae052c5b59c802}{add\+Time}} (float time)
+\begin{DoxyCompactList}\small\item\em add the amount of time passed so that the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation}{Animation}} can update. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1SpriteSheet}{Sprite\+Sheet}} $\ast$ \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation_ab70087e4eeaa2cecd9e78985e613adff}{get\+Sprite\+Sheet}} ()
+\begin{DoxyCompactList}\small\item\em Get a pointer to the \mbox{\hyperlink{classblackhole_1_1graphics_1_1SpriteSheet}{Sprite\+Sheet}}. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Texture $\ast$ \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation_ae3a197e9c8711f1a4787338d635a4123}{get\+Texture}} ()
+\begin{DoxyCompactList}\small\item\em Get a pointer to the \mbox{\hyperlink{classblackhole_1_1graphics_1_1SpriteSheet}{Sprite\+Sheet}} texture. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Rect $\ast$ \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation_a8e03286ab050466cde40a09ade8171aa}{get\+Dest\+Rect}} ()
+\begin{DoxyCompactList}\small\item\em Get a pointer to the destination rect used for positioning with the renderer. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Rect $\ast$ \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation_a9c4f8e3c2b289aaae18c660a45981767}{get\+Src\+Rect}} ()
+\begin{DoxyCompactList}\small\item\em Get a pointer to the source rect used for getting the frame of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1SpriteSheet}{Sprite\+Sheet}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The class for looping through \mbox{\hyperlink{classblackhole_1_1graphics_1_1SpriteSheet}{Sprite\+Sheet}} frames built on \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase}{Image\+Base}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1Animation_a24e625ead7ab7c9aad5a2223cfa2093d}\label{classblackhole_1_1graphics_1_1Animation_a24e625ead7ab7c9aad5a2223cfa2093d}} 
+\index{blackhole::graphics::Animation@{blackhole::graphics::Animation}!Animation@{Animation}}
+\index{Animation@{Animation}!blackhole::graphics::Animation@{blackhole::graphics::Animation}}
+\doxysubsubsection{\texorpdfstring{Animation()}{Animation()}}
+{\footnotesize\ttfamily blackhole\+::graphics\+::\+Animation\+::\+Animation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classblackhole_1_1graphics_1_1SpriteSheet}{Sprite\+Sheet}} $\ast$}]{images,  }\item[{int}]{frame,  }\item[{int $\ast$}]{frames,  }\item[{int}]{num\+\_\+frames,  }\item[{float}]{speed = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+Constructor of \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation}{Animation}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em images} & The pointer to the \mbox{\hyperlink{classblackhole_1_1graphics_1_1SpriteSheet}{Sprite\+Sheet}} used for frames \\
+\hline
+{\em frame} & The starting frame \\
+\hline
+{\em frames} & The order of frames for the animation eg. 0, 2, 1, 2 \\
+\hline
+{\em num\+\_\+frames} & The number of frames in the animation eg. 4 \\
+\hline
+{\em speed} & The amount of time between frames \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1Animation_ab07545f4c80c07fe4bae052c5b59c802}\label{classblackhole_1_1graphics_1_1Animation_ab07545f4c80c07fe4bae052c5b59c802}} 
+\index{blackhole::graphics::Animation@{blackhole::graphics::Animation}!addTime@{addTime}}
+\index{addTime@{addTime}!blackhole::graphics::Animation@{blackhole::graphics::Animation}}
+\doxysubsubsection{\texorpdfstring{addTime()}{addTime()}}
+{\footnotesize\ttfamily void blackhole\+::graphics\+::\+Animation\+::add\+Time (\begin{DoxyParamCaption}\item[{float}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+add the amount of time passed so that the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation}{Animation}} can update. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & The amount of time passed in the frame \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase_aeb3e29ce42d9f8730fcf4e951f308356}{blackhole\+::graphics\+::\+Image\+Base}}.
+
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1Animation_a8e03286ab050466cde40a09ade8171aa}\label{classblackhole_1_1graphics_1_1Animation_a8e03286ab050466cde40a09ade8171aa}} 
+\index{blackhole::graphics::Animation@{blackhole::graphics::Animation}!getDestRect@{getDestRect}}
+\index{getDestRect@{getDestRect}!blackhole::graphics::Animation@{blackhole::graphics::Animation}}
+\doxysubsubsection{\texorpdfstring{getDestRect()}{getDestRect()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Rect$\ast$ blackhole\+::graphics\+::\+Animation\+::get\+Dest\+Rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get a pointer to the destination rect used for positioning with the renderer. 
+
+\begin{DoxyReturn}{Returns}
+SDL\+\_\+\+Rect$\ast$ dest\+Rect of \mbox{\hyperlink{classblackhole_1_1graphics_1_1SpriteSheet}{Sprite\+Sheet}} 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase_aefb0396781b715264026a3acf96f284f}{blackhole\+::graphics\+::\+Image\+Base}}.
+
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1Animation_aa73fa339f7ef8050c63c130be352284a}\label{classblackhole_1_1graphics_1_1Animation_aa73fa339f7ef8050c63c130be352284a}} 
+\index{blackhole::graphics::Animation@{blackhole::graphics::Animation}!getFrame@{getFrame}}
+\index{getFrame@{getFrame}!blackhole::graphics::Animation@{blackhole::graphics::Animation}}
+\doxysubsubsection{\texorpdfstring{getFrame()}{getFrame()}}
+{\footnotesize\ttfamily int blackhole\+::graphics\+::\+Animation\+::get\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the frame the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation}{Animation}} is showing. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation_aeb7316cd25c30edcf0fc0affe45525e3}{set\+Frame()}} 
+
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation_a6bfd499a7c86c69dc1dda7cd5cfd5ac2}{reset\+Animation()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1Animation_ab70087e4eeaa2cecd9e78985e613adff}\label{classblackhole_1_1graphics_1_1Animation_ab70087e4eeaa2cecd9e78985e613adff}} 
+\index{blackhole::graphics::Animation@{blackhole::graphics::Animation}!getSpriteSheet@{getSpriteSheet}}
+\index{getSpriteSheet@{getSpriteSheet}!blackhole::graphics::Animation@{blackhole::graphics::Animation}}
+\doxysubsubsection{\texorpdfstring{getSpriteSheet()}{getSpriteSheet()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classblackhole_1_1graphics_1_1SpriteSheet}{Sprite\+Sheet}}$\ast$ blackhole\+::graphics\+::\+Animation\+::get\+Sprite\+Sheet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get a pointer to the \mbox{\hyperlink{classblackhole_1_1graphics_1_1SpriteSheet}{Sprite\+Sheet}}. 
+
+\begin{DoxyReturn}{Returns}
+Sprite\+Sheet$\ast$ of \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation}{Animation}} \mbox{\hyperlink{classblackhole_1_1graphics_1_1SpriteSheet}{Sprite\+Sheet}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1Animation_a9c4f8e3c2b289aaae18c660a45981767}\label{classblackhole_1_1graphics_1_1Animation_a9c4f8e3c2b289aaae18c660a45981767}} 
+\index{blackhole::graphics::Animation@{blackhole::graphics::Animation}!getSrcRect@{getSrcRect}}
+\index{getSrcRect@{getSrcRect}!blackhole::graphics::Animation@{blackhole::graphics::Animation}}
+\doxysubsubsection{\texorpdfstring{getSrcRect()}{getSrcRect()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Rect$\ast$ blackhole\+::graphics\+::\+Animation\+::get\+Src\+Rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get a pointer to the source rect used for getting the frame of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1SpriteSheet}{Sprite\+Sheet}}. 
+
+\begin{DoxyReturn}{Returns}
+SDL\+\_\+\+Rect$\ast$ src\+Rect of \mbox{\hyperlink{classblackhole_1_1graphics_1_1SpriteSheet}{Sprite\+Sheet}} 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase_a77ff0bf10a750e4c141cf7eb1f656d85}{blackhole\+::graphics\+::\+Image\+Base}}.
+
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1Animation_ae3a197e9c8711f1a4787338d635a4123}\label{classblackhole_1_1graphics_1_1Animation_ae3a197e9c8711f1a4787338d635a4123}} 
+\index{blackhole::graphics::Animation@{blackhole::graphics::Animation}!getTexture@{getTexture}}
+\index{getTexture@{getTexture}!blackhole::graphics::Animation@{blackhole::graphics::Animation}}
+\doxysubsubsection{\texorpdfstring{getTexture()}{getTexture()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Texture$\ast$ blackhole\+::graphics\+::\+Animation\+::get\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get a pointer to the \mbox{\hyperlink{classblackhole_1_1graphics_1_1SpriteSheet}{Sprite\+Sheet}} texture. 
+
+\begin{DoxyReturn}{Returns}
+SDL\+\_\+\+Texture$\ast$ of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1SpriteSheet}{Sprite\+Sheet}} for rendering 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase_aecb4193bcf87ba6cdbe9af0d295ff0fd}{blackhole\+::graphics\+::\+Image\+Base}}.
+
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1Animation_a967fb810af9d1643faf7ee9be7e20ef3}\label{classblackhole_1_1graphics_1_1Animation_a967fb810af9d1643faf7ee9be7e20ef3}} 
+\index{blackhole::graphics::Animation@{blackhole::graphics::Animation}!getX@{getX}}
+\index{getX@{getX}!blackhole::graphics::Animation@{blackhole::graphics::Animation}}
+\doxysubsubsection{\texorpdfstring{getX()}{getX()}}
+{\footnotesize\ttfamily float blackhole\+::graphics\+::\+Animation\+::getX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the x position of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation}{Animation}} \mbox{\hyperlink{classblackhole_1_1graphics_1_1SpriteSheet}{Sprite\+Sheet}}. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation_ab2d6d2c3d37e85307dfa2e76bbe85779}{set\+X()}} 
+
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation_aafdb08cd07060d5101f5c25a540ea001}{set\+Y()}} 
+
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation_a765a1edab4b5887303b3dff4a931f80b}{get\+Y()}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase_a96224ad8909675e7ccb93786fa102e48}{blackhole\+::graphics\+::\+Image\+Base}}.
+
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1Animation_a765a1edab4b5887303b3dff4a931f80b}\label{classblackhole_1_1graphics_1_1Animation_a765a1edab4b5887303b3dff4a931f80b}} 
+\index{blackhole::graphics::Animation@{blackhole::graphics::Animation}!getY@{getY}}
+\index{getY@{getY}!blackhole::graphics::Animation@{blackhole::graphics::Animation}}
+\doxysubsubsection{\texorpdfstring{getY()}{getY()}}
+{\footnotesize\ttfamily float blackhole\+::graphics\+::\+Animation\+::getY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the y position of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation}{Animation}} \mbox{\hyperlink{classblackhole_1_1graphics_1_1SpriteSheet}{Sprite\+Sheet}}. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation_aafdb08cd07060d5101f5c25a540ea001}{set\+Y()}} 
+
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation_ab2d6d2c3d37e85307dfa2e76bbe85779}{set\+X()}} 
+
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation_a967fb810af9d1643faf7ee9be7e20ef3}{get\+X()}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase_aa8f42175f9e528b519b96dbfdafaa2a3}{blackhole\+::graphics\+::\+Image\+Base}}.
+
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1Animation_a6bfd499a7c86c69dc1dda7cd5cfd5ac2}\label{classblackhole_1_1graphics_1_1Animation_a6bfd499a7c86c69dc1dda7cd5cfd5ac2}} 
+\index{blackhole::graphics::Animation@{blackhole::graphics::Animation}!resetAnimation@{resetAnimation}}
+\index{resetAnimation@{resetAnimation}!blackhole::graphics::Animation@{blackhole::graphics::Animation}}
+\doxysubsubsection{\texorpdfstring{resetAnimation()}{resetAnimation()}}
+{\footnotesize\ttfamily void blackhole\+::graphics\+::\+Animation\+::reset\+Animation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+set the frame back to 0 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation_aeb7316cd25c30edcf0fc0affe45525e3}{set\+Frame()}} 
+
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation_aa73fa339f7ef8050c63c130be352284a}{get\+Frame()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1Animation_aeb7316cd25c30edcf0fc0affe45525e3}\label{classblackhole_1_1graphics_1_1Animation_aeb7316cd25c30edcf0fc0affe45525e3}} 
+\index{blackhole::graphics::Animation@{blackhole::graphics::Animation}!setFrame@{setFrame}}
+\index{setFrame@{setFrame}!blackhole::graphics::Animation@{blackhole::graphics::Animation}}
+\doxysubsubsection{\texorpdfstring{setFrame()}{setFrame()}}
+{\footnotesize\ttfamily void blackhole\+::graphics\+::\+Animation\+::set\+Frame (\begin{DoxyParamCaption}\item[{int}]{frame }\end{DoxyParamCaption})}
+
+
+
+Set the frame for the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation}{Animation}} to show. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame} & The frame you want the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation}{Animation}} to show\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation_aa73fa339f7ef8050c63c130be352284a}{get\+Frame()}} 
+
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation_a6bfd499a7c86c69dc1dda7cd5cfd5ac2}{reset\+Animation()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1Animation_ab2d6d2c3d37e85307dfa2e76bbe85779}\label{classblackhole_1_1graphics_1_1Animation_ab2d6d2c3d37e85307dfa2e76bbe85779}} 
+\index{blackhole::graphics::Animation@{blackhole::graphics::Animation}!setX@{setX}}
+\index{setX@{setX}!blackhole::graphics::Animation@{blackhole::graphics::Animation}}
+\doxysubsubsection{\texorpdfstring{setX()}{setX()}}
+{\footnotesize\ttfamily void blackhole\+::graphics\+::\+Animation\+::setX (\begin{DoxyParamCaption}\item[{float}]{x }\end{DoxyParamCaption})}
+
+
+
+Set the x position of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation}{Animation}} \mbox{\hyperlink{classblackhole_1_1graphics_1_1SpriteSheet}{Sprite\+Sheet}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x position you want the sprite to render on\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation_a967fb810af9d1643faf7ee9be7e20ef3}{get\+X()}} 
+
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation_a765a1edab4b5887303b3dff4a931f80b}{get\+Y()}} 
+
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation_aafdb08cd07060d5101f5c25a540ea001}{set\+Y()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1Animation_aafdb08cd07060d5101f5c25a540ea001}\label{classblackhole_1_1graphics_1_1Animation_aafdb08cd07060d5101f5c25a540ea001}} 
+\index{blackhole::graphics::Animation@{blackhole::graphics::Animation}!setY@{setY}}
+\index{setY@{setY}!blackhole::graphics::Animation@{blackhole::graphics::Animation}}
+\doxysubsubsection{\texorpdfstring{setY()}{setY()}}
+{\footnotesize\ttfamily void blackhole\+::graphics\+::\+Animation\+::setY (\begin{DoxyParamCaption}\item[{float}]{y }\end{DoxyParamCaption})}
+
+
+
+Set the y position of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation}{Animation}} \mbox{\hyperlink{classblackhole_1_1graphics_1_1SpriteSheet}{Sprite\+Sheet}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & the y position you want the sprite to render on\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation_a765a1edab4b5887303b3dff4a931f80b}{get\+Y()}} 
+
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation_a967fb810af9d1643faf7ee9be7e20ef3}{get\+X()}} 
+
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation_ab2d6d2c3d37e85307dfa2e76bbe85779}{set\+X()}} 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/graphics/\mbox{\hyperlink{animation_8h}{animation.\+h}}\end{DoxyCompactItemize}

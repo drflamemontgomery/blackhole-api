@@ -1,0 +1,288 @@
+\hypertarget{classblackhole_1_1graphics_1_1AnimatorController}{}\doxysection{blackhole\+::graphics\+::Animator\+Controller Class Reference}
+\label{classblackhole_1_1graphics_1_1AnimatorController}\index{blackhole::graphics::AnimatorController@{blackhole::graphics::AnimatorController}}
+
+
+The class for holding and controlling \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation}{Animation}}.  
+
+
+
+
+{\ttfamily \#include $<$animator\+\_\+controller.\+h$>$}
+
+Inheritance diagram for blackhole\+::graphics\+::Animator\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classblackhole_1_1graphics_1_1AnimatorController}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1AnimatorController_ac32568b1ccf61ea2e02e2ec787338567}{Animator\+Controller}} (\mbox{\hyperlink{structblackhole_1_1graphics_1_1animation__holder}{animation\+\_\+holder}} $\ast$animations, long int array\+\_\+length)
+\begin{DoxyCompactList}\small\item\em The constructor of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1AnimatorController}{Animator\+Controller}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classblackhole_1_1graphics_1_1AnimatorController_a04127f32343486fe2306407e3659f208}{set\+Animation}} (const char $\ast$animation)
+\begin{DoxyCompactList}\small\item\em Set the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation}{Animation}} to be displayed. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation}{Animation}} $\ast$ \mbox{\hyperlink{classblackhole_1_1graphics_1_1AnimatorController_aa1849c0c1bd1f172d5fa6abec091d9e7}{get\+Animation}} ()
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation}{Animation}} that is being displayed. \end{DoxyCompactList}\item 
+const char $\ast$ \mbox{\hyperlink{classblackhole_1_1graphics_1_1AnimatorController_a69a3fbc3baa2255cab29fc029bd9fd46}{get\+Animation\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Get the name of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation}{Animation}} that is being displayed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classblackhole_1_1graphics_1_1AnimatorController_aa3fa1cf66b115ee9cf1c20760e41831e}{setX}} (float x)
+\begin{DoxyCompactList}\small\item\em Set the x position of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation}{Animation}} being displayed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classblackhole_1_1graphics_1_1AnimatorController_a866c913a915969e00bcc394121ab2833}{setY}} (float y)
+\begin{DoxyCompactList}\small\item\em Set the y position of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation}{Animation}} being displayed. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classblackhole_1_1graphics_1_1AnimatorController_ad0eb37ecceb0039b44e5dc3508a69db9}{getX}} ()
+\begin{DoxyCompactList}\small\item\em Get the x position of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation}{Animation}} being displayed. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classblackhole_1_1graphics_1_1AnimatorController_a622918719395ef5c6b16ba3bba58d661}{getY}} ()
+\begin{DoxyCompactList}\small\item\em Get the y position of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation}{Animation}} being displayed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classblackhole_1_1graphics_1_1AnimatorController_ac7e6f8c664c2f863004a38a21ddb3a2b}{add\+Time}} (float time)
+\begin{DoxyCompactList}\small\item\em add the amount of time passed so that the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation}{Animation}} can update. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Texture $\ast$ \mbox{\hyperlink{classblackhole_1_1graphics_1_1AnimatorController_a379af68bfe0aaef14a66cc724a0ecc86}{get\+Texture}} ()
+\begin{DoxyCompactList}\small\item\em Get a pointer to the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation}{Animation}} texture. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Rect $\ast$ \mbox{\hyperlink{classblackhole_1_1graphics_1_1AnimatorController_a5fe17343d3f8613ce7dad2f9ff227c15}{get\+Dest\+Rect}} ()
+\begin{DoxyCompactList}\small\item\em Get a pointer to the destination rect used for positioning with the renderer. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Rect $\ast$ \mbox{\hyperlink{classblackhole_1_1graphics_1_1AnimatorController_a71db58f1f0f693279f8def40fb7294ad}{get\+Src\+Rect}} ()
+\begin{DoxyCompactList}\small\item\em Get a pointer to the source rect used for getting the frame of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation}{Animation}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The class for holding and controlling \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation}{Animation}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1AnimatorController_ac32568b1ccf61ea2e02e2ec787338567}\label{classblackhole_1_1graphics_1_1AnimatorController_ac32568b1ccf61ea2e02e2ec787338567}} 
+\index{blackhole::graphics::AnimatorController@{blackhole::graphics::AnimatorController}!AnimatorController@{AnimatorController}}
+\index{AnimatorController@{AnimatorController}!blackhole::graphics::AnimatorController@{blackhole::graphics::AnimatorController}}
+\doxysubsubsection{\texorpdfstring{AnimatorController()}{AnimatorController()}}
+{\footnotesize\ttfamily blackhole\+::graphics\+::\+Animator\+Controller\+::\+Animator\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structblackhole_1_1graphics_1_1animation__holder}{animation\+\_\+holder}} $\ast$}]{animations,  }\item[{long int}]{array\+\_\+length }\end{DoxyParamCaption})}
+
+
+
+The constructor of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1AnimatorController}{Animator\+Controller}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em animations} & The array of \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation}{Animation}} \\
+\hline
+{\em array\+\_\+length} & The amount of \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation}{Animation}} \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1AnimatorController_ac7e6f8c664c2f863004a38a21ddb3a2b}\label{classblackhole_1_1graphics_1_1AnimatorController_ac7e6f8c664c2f863004a38a21ddb3a2b}} 
+\index{blackhole::graphics::AnimatorController@{blackhole::graphics::AnimatorController}!addTime@{addTime}}
+\index{addTime@{addTime}!blackhole::graphics::AnimatorController@{blackhole::graphics::AnimatorController}}
+\doxysubsubsection{\texorpdfstring{addTime()}{addTime()}}
+{\footnotesize\ttfamily void blackhole\+::graphics\+::\+Animator\+Controller\+::add\+Time (\begin{DoxyParamCaption}\item[{float}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+add the amount of time passed so that the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation}{Animation}} can update. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & The amount of time passed in the frame \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase_aeb3e29ce42d9f8730fcf4e951f308356}{blackhole\+::graphics\+::\+Image\+Base}}.
+
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1AnimatorController_aa1849c0c1bd1f172d5fa6abec091d9e7}\label{classblackhole_1_1graphics_1_1AnimatorController_aa1849c0c1bd1f172d5fa6abec091d9e7}} 
+\index{blackhole::graphics::AnimatorController@{blackhole::graphics::AnimatorController}!getAnimation@{getAnimation}}
+\index{getAnimation@{getAnimation}!blackhole::graphics::AnimatorController@{blackhole::graphics::AnimatorController}}
+\doxysubsubsection{\texorpdfstring{getAnimation()}{getAnimation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation}{Animation}}$\ast$ blackhole\+::graphics\+::\+Animator\+Controller\+::get\+Animation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation}{Animation}} that is being displayed. 
+
+\begin{DoxyReturn}{Returns}
+Animation$\ast$ of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation}{Animation}} that is being displayed
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1AnimatorController_a04127f32343486fe2306407e3659f208}{set\+Animation()}} 
+
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1AnimatorController_a69a3fbc3baa2255cab29fc029bd9fd46}{get\+Animation\+Name()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1AnimatorController_a69a3fbc3baa2255cab29fc029bd9fd46}\label{classblackhole_1_1graphics_1_1AnimatorController_a69a3fbc3baa2255cab29fc029bd9fd46}} 
+\index{blackhole::graphics::AnimatorController@{blackhole::graphics::AnimatorController}!getAnimationName@{getAnimationName}}
+\index{getAnimationName@{getAnimationName}!blackhole::graphics::AnimatorController@{blackhole::graphics::AnimatorController}}
+\doxysubsubsection{\texorpdfstring{getAnimationName()}{getAnimationName()}}
+{\footnotesize\ttfamily const char$\ast$ blackhole\+::graphics\+::\+Animator\+Controller\+::get\+Animation\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the name of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation}{Animation}} that is being displayed. 
+
+\begin{DoxyReturn}{Returns}
+const char$\ast$ name of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation}{Animation}} being displayed eg. running
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1AnimatorController_aa1849c0c1bd1f172d5fa6abec091d9e7}{get\+Animation()}} 
+
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1AnimatorController_a04127f32343486fe2306407e3659f208}{set\+Animation()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1AnimatorController_a5fe17343d3f8613ce7dad2f9ff227c15}\label{classblackhole_1_1graphics_1_1AnimatorController_a5fe17343d3f8613ce7dad2f9ff227c15}} 
+\index{blackhole::graphics::AnimatorController@{blackhole::graphics::AnimatorController}!getDestRect@{getDestRect}}
+\index{getDestRect@{getDestRect}!blackhole::graphics::AnimatorController@{blackhole::graphics::AnimatorController}}
+\doxysubsubsection{\texorpdfstring{getDestRect()}{getDestRect()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Rect$\ast$ blackhole\+::graphics\+::\+Animator\+Controller\+::get\+Dest\+Rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get a pointer to the destination rect used for positioning with the renderer. 
+
+\begin{DoxyReturn}{Returns}
+SDL\+\_\+\+Rect$\ast$ dest\+Rect of \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation}{Animation}} 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase_aefb0396781b715264026a3acf96f284f}{blackhole\+::graphics\+::\+Image\+Base}}.
+
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1AnimatorController_a71db58f1f0f693279f8def40fb7294ad}\label{classblackhole_1_1graphics_1_1AnimatorController_a71db58f1f0f693279f8def40fb7294ad}} 
+\index{blackhole::graphics::AnimatorController@{blackhole::graphics::AnimatorController}!getSrcRect@{getSrcRect}}
+\index{getSrcRect@{getSrcRect}!blackhole::graphics::AnimatorController@{blackhole::graphics::AnimatorController}}
+\doxysubsubsection{\texorpdfstring{getSrcRect()}{getSrcRect()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Rect$\ast$ blackhole\+::graphics\+::\+Animator\+Controller\+::get\+Src\+Rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get a pointer to the source rect used for getting the frame of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation}{Animation}}. 
+
+\begin{DoxyReturn}{Returns}
+SDL\+\_\+\+Rect$\ast$ src\+Rect of \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation}{Animation}} 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase_a77ff0bf10a750e4c141cf7eb1f656d85}{blackhole\+::graphics\+::\+Image\+Base}}.
+
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1AnimatorController_a379af68bfe0aaef14a66cc724a0ecc86}\label{classblackhole_1_1graphics_1_1AnimatorController_a379af68bfe0aaef14a66cc724a0ecc86}} 
+\index{blackhole::graphics::AnimatorController@{blackhole::graphics::AnimatorController}!getTexture@{getTexture}}
+\index{getTexture@{getTexture}!blackhole::graphics::AnimatorController@{blackhole::graphics::AnimatorController}}
+\doxysubsubsection{\texorpdfstring{getTexture()}{getTexture()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Texture$\ast$ blackhole\+::graphics\+::\+Animator\+Controller\+::get\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get a pointer to the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation}{Animation}} texture. 
+
+\begin{DoxyReturn}{Returns}
+SDL\+\_\+\+Texture$\ast$ of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation}{Animation}} for rendering 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase_aecb4193bcf87ba6cdbe9af0d295ff0fd}{blackhole\+::graphics\+::\+Image\+Base}}.
+
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1AnimatorController_ad0eb37ecceb0039b44e5dc3508a69db9}\label{classblackhole_1_1graphics_1_1AnimatorController_ad0eb37ecceb0039b44e5dc3508a69db9}} 
+\index{blackhole::graphics::AnimatorController@{blackhole::graphics::AnimatorController}!getX@{getX}}
+\index{getX@{getX}!blackhole::graphics::AnimatorController@{blackhole::graphics::AnimatorController}}
+\doxysubsubsection{\texorpdfstring{getX()}{getX()}}
+{\footnotesize\ttfamily float blackhole\+::graphics\+::\+Animator\+Controller\+::getX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the x position of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation}{Animation}} being displayed. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1AnimatorController_aa3fa1cf66b115ee9cf1c20760e41831e}{set\+X()}} 
+
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1AnimatorController_a866c913a915969e00bcc394121ab2833}{set\+Y()}} 
+
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1AnimatorController_a622918719395ef5c6b16ba3bba58d661}{get\+Y()}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase_a96224ad8909675e7ccb93786fa102e48}{blackhole\+::graphics\+::\+Image\+Base}}.
+
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1AnimatorController_a622918719395ef5c6b16ba3bba58d661}\label{classblackhole_1_1graphics_1_1AnimatorController_a622918719395ef5c6b16ba3bba58d661}} 
+\index{blackhole::graphics::AnimatorController@{blackhole::graphics::AnimatorController}!getY@{getY}}
+\index{getY@{getY}!blackhole::graphics::AnimatorController@{blackhole::graphics::AnimatorController}}
+\doxysubsubsection{\texorpdfstring{getY()}{getY()}}
+{\footnotesize\ttfamily float blackhole\+::graphics\+::\+Animator\+Controller\+::getY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the y position of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation}{Animation}} being displayed. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1AnimatorController_a866c913a915969e00bcc394121ab2833}{set\+Y()}} 
+
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1AnimatorController_aa3fa1cf66b115ee9cf1c20760e41831e}{set\+X()}} 
+
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1AnimatorController_ad0eb37ecceb0039b44e5dc3508a69db9}{get\+X()}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase_aa8f42175f9e528b519b96dbfdafaa2a3}{blackhole\+::graphics\+::\+Image\+Base}}.
+
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1AnimatorController_a04127f32343486fe2306407e3659f208}\label{classblackhole_1_1graphics_1_1AnimatorController_a04127f32343486fe2306407e3659f208}} 
+\index{blackhole::graphics::AnimatorController@{blackhole::graphics::AnimatorController}!setAnimation@{setAnimation}}
+\index{setAnimation@{setAnimation}!blackhole::graphics::AnimatorController@{blackhole::graphics::AnimatorController}}
+\doxysubsubsection{\texorpdfstring{setAnimation()}{setAnimation()}}
+{\footnotesize\ttfamily void blackhole\+::graphics\+::\+Animator\+Controller\+::set\+Animation (\begin{DoxyParamCaption}\item[{const char $\ast$}]{animation }\end{DoxyParamCaption})}
+
+
+
+Set the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation}{Animation}} to be displayed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em animation} & The name of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation}{Animation}} to display eg. running\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1AnimatorController_aa1849c0c1bd1f172d5fa6abec091d9e7}{get\+Animation()}} 
+
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1AnimatorController_a69a3fbc3baa2255cab29fc029bd9fd46}{get\+Animation\+Name()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1AnimatorController_aa3fa1cf66b115ee9cf1c20760e41831e}\label{classblackhole_1_1graphics_1_1AnimatorController_aa3fa1cf66b115ee9cf1c20760e41831e}} 
+\index{blackhole::graphics::AnimatorController@{blackhole::graphics::AnimatorController}!setX@{setX}}
+\index{setX@{setX}!blackhole::graphics::AnimatorController@{blackhole::graphics::AnimatorController}}
+\doxysubsubsection{\texorpdfstring{setX()}{setX()}}
+{\footnotesize\ttfamily void blackhole\+::graphics\+::\+Animator\+Controller\+::setX (\begin{DoxyParamCaption}\item[{float}]{x }\end{DoxyParamCaption})}
+
+
+
+Set the x position of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation}{Animation}} being displayed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x position you want the sprite to render on\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1AnimatorController_ad0eb37ecceb0039b44e5dc3508a69db9}{get\+X()}} 
+
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1AnimatorController_a622918719395ef5c6b16ba3bba58d661}{get\+Y()}} 
+
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1AnimatorController_a866c913a915969e00bcc394121ab2833}{set\+Y()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1AnimatorController_a866c913a915969e00bcc394121ab2833}\label{classblackhole_1_1graphics_1_1AnimatorController_a866c913a915969e00bcc394121ab2833}} 
+\index{blackhole::graphics::AnimatorController@{blackhole::graphics::AnimatorController}!setY@{setY}}
+\index{setY@{setY}!blackhole::graphics::AnimatorController@{blackhole::graphics::AnimatorController}}
+\doxysubsubsection{\texorpdfstring{setY()}{setY()}}
+{\footnotesize\ttfamily void blackhole\+::graphics\+::\+Animator\+Controller\+::setY (\begin{DoxyParamCaption}\item[{float}]{y }\end{DoxyParamCaption})}
+
+
+
+Set the y position of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Animation}{Animation}} being displayed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & The y position you want the sprite to render on\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1AnimatorController_a622918719395ef5c6b16ba3bba58d661}{get\+Y()}} 
+
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1AnimatorController_ad0eb37ecceb0039b44e5dc3508a69db9}{get\+X()}} 
+
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1AnimatorController_aa3fa1cf66b115ee9cf1c20760e41831e}{set\+X()}} 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/graphics/\mbox{\hyperlink{animator__controller_8h}{animator\+\_\+controller.\+h}}\end{DoxyCompactItemize}

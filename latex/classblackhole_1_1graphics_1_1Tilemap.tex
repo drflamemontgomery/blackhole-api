@@ -1,0 +1,134 @@
+\hypertarget{classblackhole_1_1graphics_1_1Tilemap}{}\doxysection{blackhole\+::graphics\+::Tilemap Class Reference}
+\label{classblackhole_1_1graphics_1_1Tilemap}\index{blackhole::graphics::Tilemap@{blackhole::graphics::Tilemap}}
+
+
+A class for loading tmx files as images built on \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase}{Image\+Base}}.  
+
+
+
+
+{\ttfamily \#include $<$tilemap.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1Tilemap_a679c83b975d46e525c19eec248f74a57}{Tilemap}} (const char $\ast$file, SDL\+\_\+\+Renderer $\ast$renderer)
+\begin{DoxyCompactList}\small\item\em Constructor of \mbox{\hyperlink{classblackhole_1_1graphics_1_1Tilemap}{Tilemap}}. \end{DoxyCompactList}\item 
+Tmx\+::\+Map $\ast$ \mbox{\hyperlink{classblackhole_1_1graphics_1_1Tilemap_a60ad12e8587610086bdeff0be0884142}{get\+Map}} ()
+\begin{DoxyCompactList}\small\item\em Get the raw data of the tilemap. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1Image}{Image}} $\ast$ \mbox{\hyperlink{classblackhole_1_1graphics_1_1Tilemap_a95321a95fe893f8a2b57f1befa974797}{get\+Tile\+Layer\+Image}} (int layer)
+\begin{DoxyCompactList}\small\item\em Get the image made from the tilemap Tile layers. \end{DoxyCompactList}\item 
+const Tmx\+::\+Tile\+Layer $\ast$ \mbox{\hyperlink{classblackhole_1_1graphics_1_1Tilemap_aa2b758a122a5f01d168a8691cb6a78a2}{get\+Tile\+Layer}} (int layer)
+\begin{DoxyCompactList}\small\item\em Get the raw data of the tilemap Tile layers. \end{DoxyCompactList}\item 
+const Tmx\+::\+Object\+Group $\ast$ \mbox{\hyperlink{classblackhole_1_1graphics_1_1Tilemap_a78295965defa8c630103c37fe4fc50c2}{get\+Object\+Group}} (int layer)
+\begin{DoxyCompactList}\small\item\em Get the raw data of the tilemap Object Groups. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class for loading tmx files as images built on \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase}{Image\+Base}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1Tilemap_a679c83b975d46e525c19eec248f74a57}\label{classblackhole_1_1graphics_1_1Tilemap_a679c83b975d46e525c19eec248f74a57}} 
+\index{blackhole::graphics::Tilemap@{blackhole::graphics::Tilemap}!Tilemap@{Tilemap}}
+\index{Tilemap@{Tilemap}!blackhole::graphics::Tilemap@{blackhole::graphics::Tilemap}}
+\doxysubsubsection{\texorpdfstring{Tilemap()}{Tilemap()}}
+{\footnotesize\ttfamily blackhole\+::graphics\+::\+Tilemap\+::\+Tilemap (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file,  }\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})}
+
+
+
+Constructor of \mbox{\hyperlink{classblackhole_1_1graphics_1_1Tilemap}{Tilemap}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & The location of tmx file \\
+\hline
+{\em renderer} & The renderer of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Window}{Window}} \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1Tilemap_a60ad12e8587610086bdeff0be0884142}\label{classblackhole_1_1graphics_1_1Tilemap_a60ad12e8587610086bdeff0be0884142}} 
+\index{blackhole::graphics::Tilemap@{blackhole::graphics::Tilemap}!getMap@{getMap}}
+\index{getMap@{getMap}!blackhole::graphics::Tilemap@{blackhole::graphics::Tilemap}}
+\doxysubsubsection{\texorpdfstring{getMap()}{getMap()}}
+{\footnotesize\ttfamily Tmx\+::\+Map$\ast$ blackhole\+::graphics\+::\+Tilemap\+::get\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the raw data of the tilemap. 
+
+return Tmx\+::\+Map containing tilemap data \mbox{\Hypertarget{classblackhole_1_1graphics_1_1Tilemap_a78295965defa8c630103c37fe4fc50c2}\label{classblackhole_1_1graphics_1_1Tilemap_a78295965defa8c630103c37fe4fc50c2}} 
+\index{blackhole::graphics::Tilemap@{blackhole::graphics::Tilemap}!getObjectGroup@{getObjectGroup}}
+\index{getObjectGroup@{getObjectGroup}!blackhole::graphics::Tilemap@{blackhole::graphics::Tilemap}}
+\doxysubsubsection{\texorpdfstring{getObjectGroup()}{getObjectGroup()}}
+{\footnotesize\ttfamily const Tmx\+::\+Object\+Group$\ast$ blackhole\+::graphics\+::\+Tilemap\+::get\+Object\+Group (\begin{DoxyParamCaption}\item[{int}]{layer }\end{DoxyParamCaption})}
+
+
+
+Get the raw data of the tilemap Object Groups. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em layer} & Object Group to get\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Tmx\+::\+Object\+Group$\ast$ of the Object Group raw data
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1Tilemap_a95321a95fe893f8a2b57f1befa974797}{get\+Tile\+Layer\+Image()}} 
+
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1Tilemap_aa2b758a122a5f01d168a8691cb6a78a2}{get\+Tile\+Layer()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1Tilemap_aa2b758a122a5f01d168a8691cb6a78a2}\label{classblackhole_1_1graphics_1_1Tilemap_aa2b758a122a5f01d168a8691cb6a78a2}} 
+\index{blackhole::graphics::Tilemap@{blackhole::graphics::Tilemap}!getTileLayer@{getTileLayer}}
+\index{getTileLayer@{getTileLayer}!blackhole::graphics::Tilemap@{blackhole::graphics::Tilemap}}
+\doxysubsubsection{\texorpdfstring{getTileLayer()}{getTileLayer()}}
+{\footnotesize\ttfamily const Tmx\+::\+Tile\+Layer$\ast$ blackhole\+::graphics\+::\+Tilemap\+::get\+Tile\+Layer (\begin{DoxyParamCaption}\item[{int}]{layer }\end{DoxyParamCaption})}
+
+
+
+Get the raw data of the tilemap Tile layers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em layer} & Tile layer to get\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Tmx\+::\+Tile\+Layer$\ast$ of the Tile Layer raw data
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1Tilemap_a95321a95fe893f8a2b57f1befa974797}{get\+Tile\+Layer\+Image()}} 
+
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1Tilemap_a78295965defa8c630103c37fe4fc50c2}{get\+Object\+Group()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1Tilemap_a95321a95fe893f8a2b57f1befa974797}\label{classblackhole_1_1graphics_1_1Tilemap_a95321a95fe893f8a2b57f1befa974797}} 
+\index{blackhole::graphics::Tilemap@{blackhole::graphics::Tilemap}!getTileLayerImage@{getTileLayerImage}}
+\index{getTileLayerImage@{getTileLayerImage}!blackhole::graphics::Tilemap@{blackhole::graphics::Tilemap}}
+\doxysubsubsection{\texorpdfstring{getTileLayerImage()}{getTileLayerImage()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classblackhole_1_1graphics_1_1Image}{Image}}$\ast$ blackhole\+::graphics\+::\+Tilemap\+::get\+Tile\+Layer\+Image (\begin{DoxyParamCaption}\item[{int}]{layer }\end{DoxyParamCaption})}
+
+
+
+Get the image made from the tilemap Tile layers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em layer} & Tile layer to get\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Image$\ast$ of the Tile layer
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1Tilemap_aa2b758a122a5f01d168a8691cb6a78a2}{get\+Tile\+Layer()}} 
+
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1Tilemap_a78295965defa8c630103c37fe4fc50c2}{get\+Object\+Group()}} 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/graphics/\mbox{\hyperlink{tilemap_8h}{tilemap.\+h}}\end{DoxyCompactItemize}
