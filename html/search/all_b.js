@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['window_78',['Window',['../classblackhole_1_1graphics_1_1Window.html',1,'blackhole::graphics::Window'],['../classblackhole_1_1graphics_1_1Window.html#a844b5939bbfa79a61b9bc79d20baa606',1,'blackhole::graphics::Window::Window(int width, int height, const char *title, SDL_Rect renderFrame)'],['../classblackhole_1_1graphics_1_1Window.html#a5640bb85dc170c4ab3a204498fd2c1e6',1,'blackhole::graphics::Window::Window(int width, int height, const char *title, SDL_Rect renderFrame, Color bg)']]],
-  ['window_2eh_79',['window.h',['../window_8h.html',1,'']]]
+  ['tilemap_77',['Tilemap',['../classblackhole_1_1graphics_1_1Tilemap.html',1,'blackhole::graphics::Tilemap'],['../classblackhole_1_1graphics_1_1Tilemap.html#a679c83b975d46e525c19eec248f74a57',1,'blackhole::graphics::Tilemap::Tilemap()']]],
+  ['tilemap_2eh_78',['tilemap.h',['../tilemap_8h.html',1,'']]]
 ];
