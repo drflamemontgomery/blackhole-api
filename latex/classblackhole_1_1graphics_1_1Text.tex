@@ -1,0 +1,177 @@
+\hypertarget{classblackhole_1_1graphics_1_1Text}{}\doxysection{blackhole\+::graphics\+::Text Class Reference}
+\label{classblackhole_1_1graphics_1_1Text}\index{blackhole::graphics::Text@{blackhole::graphics::Text}}
+
+
+class for \mbox{\hyperlink{classblackhole_1_1graphics_1_1Text}{Text}} rendering built on \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase}{Image\+Base}}  
+
+
+
+
+{\ttfamily \#include $<$text.\+h$>$}
+
+Inheritance diagram for blackhole\+::graphics\+::Text\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classblackhole_1_1graphics_1_1Text}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1Text_a58ef04d585c9c8c60948e1c5bd3af8c1}{Text}} (const char $\ast$file, const char $\ast$text, SDL\+\_\+\+Renderer $\ast$renderer, int size, SDL\+\_\+\+Color color, float x=0, float y=0)
+\begin{DoxyCompactList}\small\item\em Constructor of \mbox{\hyperlink{classblackhole_1_1graphics_1_1Text}{Text}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classblackhole_1_1graphics_1_1Text_aba03cb0da100cfa2f9484ee4f4d6cb1e}{setX}} (float x)
+\begin{DoxyCompactList}\small\item\em Set the x position of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Text}{Text}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classblackhole_1_1graphics_1_1Text_a376da14703929bd14b65b957104bf2f4}{setY}} (float y)
+\begin{DoxyCompactList}\small\item\em Set the y position of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Text}{Text}}. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classblackhole_1_1graphics_1_1Text_a42250ac8e577eb50f4ddb236030b5e0c}{getX}} ()
+\begin{DoxyCompactList}\small\item\em Get the x position of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Text}{Text}}. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classblackhole_1_1graphics_1_1Text_abf3ce275e0db4e676caa5496d2d964b5}{getY}} ()
+\begin{DoxyCompactList}\small\item\em Get the y position of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Text}{Text}}. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Rect $\ast$ \mbox{\hyperlink{classblackhole_1_1graphics_1_1Text_a795301339d98840c569d59a50ce6b79d}{get\+Dest\+Rect}} ()
+\begin{DoxyCompactList}\small\item\em Get a pointer to the destination rect used for positioning with the renderer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+class for \mbox{\hyperlink{classblackhole_1_1graphics_1_1Text}{Text}} rendering built on \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase}{Image\+Base}} 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1Text_a58ef04d585c9c8c60948e1c5bd3af8c1}\label{classblackhole_1_1graphics_1_1Text_a58ef04d585c9c8c60948e1c5bd3af8c1}} 
+\index{blackhole::graphics::Text@{blackhole::graphics::Text}!Text@{Text}}
+\index{Text@{Text}!blackhole::graphics::Text@{blackhole::graphics::Text}}
+\doxysubsubsection{\texorpdfstring{Text()}{Text()}}
+{\footnotesize\ttfamily blackhole\+::graphics\+::\+Text\+::\+Text (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file,  }\item[{const char $\ast$}]{text,  }\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer,  }\item[{int}]{size,  }\item[{SDL\+\_\+\+Color}]{color,  }\item[{float}]{x = {\ttfamily 0},  }\item[{float}]{y = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Constructor of \mbox{\hyperlink{classblackhole_1_1graphics_1_1Text}{Text}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & The location of the file \\
+\hline
+{\em text} & The text to display \\
+\hline
+{\em renderer} & The renderer of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Window}{Window}} \\
+\hline
+{\em size} & The size of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Text}{Text}} \\
+\hline
+{\em color} & The color of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Text}{Text}} \\
+\hline
+{\em x} & The x position of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Image}{Image}} \\
+\hline
+{\em y} & the y position of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Image}{Image}} \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1Text_a795301339d98840c569d59a50ce6b79d}\label{classblackhole_1_1graphics_1_1Text_a795301339d98840c569d59a50ce6b79d}} 
+\index{blackhole::graphics::Text@{blackhole::graphics::Text}!getDestRect@{getDestRect}}
+\index{getDestRect@{getDestRect}!blackhole::graphics::Text@{blackhole::graphics::Text}}
+\doxysubsubsection{\texorpdfstring{getDestRect()}{getDestRect()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Rect$\ast$ blackhole\+::graphics\+::\+Text\+::get\+Dest\+Rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get a pointer to the destination rect used for positioning with the renderer. 
+
+\begin{DoxyReturn}{Returns}
+SDL\+\_\+\+Rect$\ast$ dest\+Rect of \mbox{\hyperlink{classblackhole_1_1graphics_1_1Text}{Text}} 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase_aefb0396781b715264026a3acf96f284f}{blackhole\+::graphics\+::\+Image\+Base}}.
+
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1Text_a42250ac8e577eb50f4ddb236030b5e0c}\label{classblackhole_1_1graphics_1_1Text_a42250ac8e577eb50f4ddb236030b5e0c}} 
+\index{blackhole::graphics::Text@{blackhole::graphics::Text}!getX@{getX}}
+\index{getX@{getX}!blackhole::graphics::Text@{blackhole::graphics::Text}}
+\doxysubsubsection{\texorpdfstring{getX()}{getX()}}
+{\footnotesize\ttfamily float blackhole\+::graphics\+::\+Text\+::getX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the x position of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Text}{Text}}. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1Text_aba03cb0da100cfa2f9484ee4f4d6cb1e}{set\+X()}} 
+
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1Text_a376da14703929bd14b65b957104bf2f4}{set\+Y()}} 
+
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1Text_abf3ce275e0db4e676caa5496d2d964b5}{get\+Y()}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase_a96224ad8909675e7ccb93786fa102e48}{blackhole\+::graphics\+::\+Image\+Base}}.
+
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1Text_abf3ce275e0db4e676caa5496d2d964b5}\label{classblackhole_1_1graphics_1_1Text_abf3ce275e0db4e676caa5496d2d964b5}} 
+\index{blackhole::graphics::Text@{blackhole::graphics::Text}!getY@{getY}}
+\index{getY@{getY}!blackhole::graphics::Text@{blackhole::graphics::Text}}
+\doxysubsubsection{\texorpdfstring{getY()}{getY()}}
+{\footnotesize\ttfamily float blackhole\+::graphics\+::\+Text\+::getY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the y position of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Text}{Text}}. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1Text_a376da14703929bd14b65b957104bf2f4}{set\+Y()}} 
+
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1Text_aba03cb0da100cfa2f9484ee4f4d6cb1e}{set\+X()}} 
+
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1Text_a42250ac8e577eb50f4ddb236030b5e0c}{get\+X()}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{classblackhole_1_1graphics_1_1ImageBase_aa8f42175f9e528b519b96dbfdafaa2a3}{blackhole\+::graphics\+::\+Image\+Base}}.
+
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1Text_aba03cb0da100cfa2f9484ee4f4d6cb1e}\label{classblackhole_1_1graphics_1_1Text_aba03cb0da100cfa2f9484ee4f4d6cb1e}} 
+\index{blackhole::graphics::Text@{blackhole::graphics::Text}!setX@{setX}}
+\index{setX@{setX}!blackhole::graphics::Text@{blackhole::graphics::Text}}
+\doxysubsubsection{\texorpdfstring{setX()}{setX()}}
+{\footnotesize\ttfamily void blackhole\+::graphics\+::\+Text\+::setX (\begin{DoxyParamCaption}\item[{float}]{x }\end{DoxyParamCaption})}
+
+
+
+Set the x position of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Text}{Text}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x position you want the sprite to render on\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1Text_a42250ac8e577eb50f4ddb236030b5e0c}{get\+X()}} 
+
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1Text_abf3ce275e0db4e676caa5496d2d964b5}{get\+Y()}} 
+
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1Text_a376da14703929bd14b65b957104bf2f4}{set\+Y()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classblackhole_1_1graphics_1_1Text_a376da14703929bd14b65b957104bf2f4}\label{classblackhole_1_1graphics_1_1Text_a376da14703929bd14b65b957104bf2f4}} 
+\index{blackhole::graphics::Text@{blackhole::graphics::Text}!setY@{setY}}
+\index{setY@{setY}!blackhole::graphics::Text@{blackhole::graphics::Text}}
+\doxysubsubsection{\texorpdfstring{setY()}{setY()}}
+{\footnotesize\ttfamily void blackhole\+::graphics\+::\+Text\+::setY (\begin{DoxyParamCaption}\item[{float}]{y }\end{DoxyParamCaption})}
+
+
+
+Set the y position of the \mbox{\hyperlink{classblackhole_1_1graphics_1_1Text}{Text}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & the y position you want the sprite to render on\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1Text_abf3ce275e0db4e676caa5496d2d964b5}{get\+Y()}} 
+
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1Text_a42250ac8e577eb50f4ddb236030b5e0c}{get\+X()}} 
+
+\mbox{\hyperlink{classblackhole_1_1graphics_1_1Text_aba03cb0da100cfa2f9484ee4f4d6cb1e}{set\+X()}} 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/graphics/\mbox{\hyperlink{text_8h}{text.\+h}}\end{DoxyCompactItemize}
