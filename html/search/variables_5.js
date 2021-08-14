@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['name_168',['name',['../structblackhole_1_1graphics_1_1animation__holder.html#aeb712c6bd67d3a372d4d9a68d9b51c7c',1,'blackhole::graphics::animation_holder']]]
+  ['name_174',['name',['../structblackhole_1_1graphics_1_1animation__holder.html#aeb712c6bd67d3a372d4d9a68d9b51c7c',1,'blackhole::graphics::animation_holder']]]
 ];
