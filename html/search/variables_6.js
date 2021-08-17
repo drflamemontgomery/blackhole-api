@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['red_175',['red',['../structblackhole_1_1graphics_1_1Color.html#abf293107025db4ad11b72521f7941ba2',1,'blackhole::graphics::Color']]]
+  ['red_177',['red',['../structblackhole_1_1graphics_1_1Color.html#abf293107025db4ad11b72521f7941ba2',1,'blackhole::graphics::Color']]]
 ];

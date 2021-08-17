@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['handleevents_45',['handleEvents',['../classblackhole_1_1graphics_1_1Window.html#ade1d9a15c33fd73c8e7e2ad7ce58e5c3',1,'blackhole::graphics::Window']]]
+  ['handleevents_44',['handleEvents',['../classblackhole_1_1graphics_1_1Window.html#a42e8bd5c98830661d00f03a88fa8cb0b',1,'blackhole::graphics::Window']]]
 ];

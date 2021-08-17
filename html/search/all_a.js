@@ -1,11 +1,13 @@
 var searchData=
 [
-  ['setanimation_64',['setAnimation',['../classblackhole_1_1graphics_1_1AnimatorController.html#a04127f32343486fe2306407e3659f208',1,'blackhole::graphics::AnimatorController']]],
-  ['setflipx_65',['setFlipX',['../classblackhole_1_1graphics_1_1ImageBase.html#ad0d878ad6c6ec744f7ba5477fe5cfc1d',1,'blackhole::graphics::ImageBase']]],
-  ['setflipy_66',['setFlipY',['../classblackhole_1_1graphics_1_1ImageBase.html#a9edc33f427e641f54c781f2a05116d58',1,'blackhole::graphics::ImageBase']]],
-  ['setfps_67',['setFps',['../classblackhole_1_1graphics_1_1Window.html#a22c7a8398422295726f7a436fdf72c01',1,'blackhole::graphics::Window']]],
-  ['setframe_68',['setFrame',['../classblackhole_1_1graphics_1_1Animation.html#aeb7316cd25c30edcf0fc0affe45525e3',1,'blackhole::graphics::Animation::setFrame()'],['../classblackhole_1_1graphics_1_1SpriteSheet.html#a1214f47f6eaf825dff36aaafdb6419e5',1,'blackhole::graphics::SpriteSheet::setFrame()']]],
-  ['setlayer_69',['setLayer',['../classblackhole_1_1graphics_1_1ImageBase.html#af035900d83e216aec98eacd1071ed883',1,'blackhole::graphics::ImageBase']]],
+  ['setanimation_62',['setAnimation',['../classblackhole_1_1graphics_1_1AnimatorController.html#a04127f32343486fe2306407e3659f208',1,'blackhole::graphics::AnimatorController']]],
+  ['seteventhandler_63',['setEventHandler',['../classblackhole_1_1graphics_1_1Window.html#a5014dbd3c88cbd86bb82bb7f6d873ed8',1,'blackhole::graphics::Window']]],
+  ['setflipx_64',['setFlipX',['../classblackhole_1_1graphics_1_1ImageBase.html#ad0d878ad6c6ec744f7ba5477fe5cfc1d',1,'blackhole::graphics::ImageBase']]],
+  ['setflipy_65',['setFlipY',['../classblackhole_1_1graphics_1_1ImageBase.html#a9edc33f427e641f54c781f2a05116d58',1,'blackhole::graphics::ImageBase']]],
+  ['setfps_66',['setFps',['../classblackhole_1_1graphics_1_1Window.html#a22c7a8398422295726f7a436fdf72c01',1,'blackhole::graphics::Window']]],
+  ['setframe_67',['setFrame',['../classblackhole_1_1graphics_1_1Animation.html#aeb7316cd25c30edcf0fc0affe45525e3',1,'blackhole::graphics::Animation::setFrame()'],['../classblackhole_1_1graphics_1_1SpriteSheet.html#a1214f47f6eaf825dff36aaafdb6419e5',1,'blackhole::graphics::SpriteSheet::setFrame()']]],
+  ['setlayer_68',['setLayer',['../classblackhole_1_1graphics_1_1ImageBase.html#af035900d83e216aec98eacd1071ed883',1,'blackhole::graphics::ImageBase']]],
+  ['setmainfunction_69',['setMainFunction',['../classblackhole_1_1graphics_1_1Window.html#add3726f0e9273b006d6954f93bf3d69f',1,'blackhole::graphics::Window']]],
   ['setrenderframe_70',['setRenderFrame',['../classblackhole_1_1graphics_1_1Window.html#a27dcb58b74b33d241eb3d5f51d54bab3',1,'blackhole::graphics::Window']]],
   ['setscale_71',['setScale',['../classblackhole_1_1graphics_1_1Window.html#a026f0861f087c37708a62990a232b0f3',1,'blackhole::graphics::Window']]],
   ['settexture_72',['setTexture',['../classblackhole_1_1graphics_1_1ImageBase.html#a6107472c7884c8346cb0068a03a92868',1,'blackhole::graphics::ImageBase']]],
@@ -13,5 +15,5 @@ var searchData=
   ['sety_74',['setY',['../classblackhole_1_1graphics_1_1SpriteSheet.html#a878b1e422b3c19479066cef07359f983',1,'blackhole::graphics::SpriteSheet::setY()'],['../classblackhole_1_1graphics_1_1Camera.html#ae46fab465a10737ad19eb64b2f164a50',1,'blackhole::graphics::Camera::setY()'],['../classblackhole_1_1graphics_1_1Image.html#afe3795b0a12464f9fd8e92e20b47086a',1,'blackhole::graphics::Image::setY()'],['../classblackhole_1_1graphics_1_1AnimatorController.html#a866c913a915969e00bcc394121ab2833',1,'blackhole::graphics::AnimatorController::setY()'],['../classblackhole_1_1graphics_1_1Animation.html#aafdb08cd07060d5101f5c25a540ea001',1,'blackhole::graphics::Animation::setY()'],['../classblackhole_1_1graphics_1_1Text.html#a376da14703929bd14b65b957104bf2f4',1,'blackhole::graphics::Text::setY()']]],
   ['spritesheet_75',['SpriteSheet',['../classblackhole_1_1graphics_1_1SpriteSheet.html',1,'blackhole::graphics::SpriteSheet'],['../classblackhole_1_1graphics_1_1SpriteSheet.html#a136c06f357d41f8e69d72aa5329a7735',1,'blackhole::graphics::SpriteSheet::SpriteSheet()']]],
   ['spritesheet_2eh_76',['spritesheet.h',['../spritesheet_8h.html',1,'']]],
-  ['startmainloop_77',['startMainLoop',['../classblackhole_1_1graphics_1_1Window.html#a5773aa18977f5148cd1aa9bcec088101',1,'blackhole::graphics::Window']]]
+  ['startmainloop_77',['startMainLoop',['../classblackhole_1_1graphics_1_1Window.html#ae159eb95c47d34c7331051bae7e12568',1,'blackhole::graphics::Window']]]
 ];
